@@ -2,7 +2,7 @@
 
 Why does malware exist?
 
-The primary reasons for malware existing generally falls under political or economic gain, defacement/destruction, and reconnaissance/splying.
+The primary reasons for malware existing generally falls under political or economic gain, defacement/destruction, and reconnaissance/spying.
 
 What are the roles of an anti-malware researcher?
 
