@@ -1,37 +1,16 @@
-## Welcome to GitHub Pages
+## Week 1
 
-You can use the [editor on GitHub](https://github.com/GarrettHaley/CS-373-DADA/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Why does malware exist?
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The primary reasons for malware existing generally falls under political or economic gain, defacement/destruction, and reconnaissance/splying.
 
-### Markdown
+What are the roles of an anti-malware researcher?
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The primary role of an anti-malware researcher is to follow best practices, etiqueete and safe computing. Futher the researcher should be able to understand a describe the threat, create countermeasures, and approach the design from an anti-attacker perspective.
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+Anti-malware History
 
-- Bulleted
-- List
+Commercial anti-virus did not come out to the market until the early 1990's. Careers were hard to combe by in computer antivirus research. The primary jobs market was to work for the computer antivirus research organization formed in 1990. The market now has over 10 billion invested in the endpoint security market.
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/GarrettHaley/CS-373-DADA/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
