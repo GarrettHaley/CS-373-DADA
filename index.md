@@ -37,38 +37,14 @@ Persistent – The attacker has an objective (or mission in longer-term campaign
 Threat – The attacker is organized, receives instructions, is sufficiently funded to perform their (sometimes extended) operations, and is motivated.
 
 #### Characteristics of an APT:
-Actors
-Motives
-Targets
-Goals
 
-#### Actors:
-Terrorists/activists
-Governments
-Organized crime groups
-Competitors
-Malicious insiders/ex-employee
-
-#### Motives:
-Money
-Disgruntlement or revenge
-Ideology
-Excitement
-
-#### Targets:
-Large corporations
-Governments
-Defense Contractors
-Anyone
-
-#### Goals:
-Use stealth during intrusion to avoid detection
-Create backdoors to allow greater access, especially if other access points have been discovered and patched
- Initiating the primary mission:
-Stealing sensitive data
-Monitoring communications
-Disrupting operations
- Leaving undetected
+1.Actors: Terrorists/activists, governments, organized crime groups, competitors, malicious insiders/ex-employee.
+2. Motives: Money, disgruntlement/revenge, ideology, or excitement.
+3. Targets: Large corporations, governments, defense contractors ... anyone.
+4. Goals:
+ - Use stealth during intrusion to avoid detection
+ - Create backdoors to allow greater access, especially if other access points have been discovered and patched
+ - Initiating the primary mission: Stealing sensitive data, monitoring communications, disrupting operations., leaving undetected.
 
 
 
