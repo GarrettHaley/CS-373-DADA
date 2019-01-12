@@ -16,13 +16,13 @@ The lecturer provides one model for attack stategy which involves the following 
 6. Command and Control: Enables the adversary to do what they need to achieve their task (i.e destroy a system, retrieve information, etc).
 7. Actions and Objectives: Execute tasks and objectives.
 
-#### Anti-malware History
+#### Early Careers in Developing Anti-malware
 
-Commercial anti-virus did not come out to the market until the early 1990's. Careers were hard to combe by in computer antivirus research. The primary jobs market was to work for the computer antivirus research organization formed in 1990. The market now has over 10 billion invested in the endpoint security market.
+Careers used to be hard to combe by in computer antivirus research. Commercial anti-virus did not come out to the market until the early 1990's. Up until this point, primary jobs market was to work for the computer antivirus research organization formed in 1990. The market now has over 10 billion invested in the endpoint security market with over a million positions going unfilled worldwide.
 
 #### What are the Roles of a Malware Researcher?
 
-The primary role of an malware researcher is to follow best practices, etiquette and safe computing. Futher the researcher should be able to understand a describe the threat, create countermeasures, and approach the design from an anti-attacker perspective.
+The primary role of an malware researcher is to follow best practices, etiquette and safe computing. Futher the researcher should be able to understand a describe the threat, create countermeasures, and approach the design from an anti-attacker perspective. This involves understanding the systems the protect, adversary strategies, 
 
 #### Basic Malware/Security Definitions:
 
