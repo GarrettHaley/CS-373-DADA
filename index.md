@@ -1,12 +1,12 @@
-## Week 1
-
-#### Anti-malware History
-
-Commercial anti-virus did not come out to the market until the early 1990's. Careers were hard to combe by in computer antivirus research. The primary jobs market was to work for the computer antivirus research organization formed in 1990. The market now has over 10 billion invested in the endpoint security market.
+## Week 1 Write Up
+This week's write up will focus on the lecture content created by the Director of Threat Intelligence Malware Operations at McAfee Labs. Overall, I found the material to be pretty engaging and interesting. I will go over a little bit about what I learned about malware, why it exists, naming conventions, role of malware researchers, some security definitions I learned, and review aspects of Advanced Persistent Threats (APT's)
 
 #### Why Does Malware Exist?
 
 The primary reasons for malware existing generally falls under political or economic gain, defacement/destruction, and reconnaissance/spying.
+#### Anti-malware History
+
+Commercial anti-virus did not come out to the market until the early 1990's. Careers were hard to combe by in computer antivirus research. The primary jobs market was to work for the computer antivirus research organization formed in 1990. The market now has over 10 billion invested in the endpoint security market.
 
 #### What are the Roles of a Malware Researcher?
 
