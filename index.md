@@ -39,7 +39,7 @@ Threat – The attacker is organized, receives instructions, is sufficiently fun
 
 #### Characteristics of an APT:
 
-1.Actors: Terrorists/activists, governments, organized crime groups, competitors, malicious insiders/ex-employee.
+1. Actors: Terrorists/activists, governments, organized crime groups, competitors, malicious insiders/ex-employee.
 2. Motives: Money, disgruntlement/revenge, ideology, or excitement.
 3. Targets: Large corporations, governments, defense contractors ... anyone.
 4. Goals:
