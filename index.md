@@ -3,7 +3,19 @@ This week's write up will focus on the lecture content created by the Director o
 
 #### Why Does Malware Exist?
 
-The primary reason for malware existing spoken upon in lecture generally falls under political/economic gain, defacement/destruction, and reconnaissance/spying. The malware examples he spoke about (sony attack, middle east attacks, etc.) are still seem very relevant. 
+The primary reason for malware existing spoken upon in lecture generally falls under political/economic gain, defacement/destruction, and reconnaissance/spying. The malware examples spoken about during lecture (sony attack, middle east attacks, etc.) all have adversary profiles with one or more of the primary motivations described above. 
+
+#### Strategy used by Attackers
+
+The lecturer provides one model for attack stategy which involves the following 7 steps:
+1.  Reconnaissanc: Discreetly discovering information regarding the target (can be passive or active). One example of this was gathering metadata companies accidentally attach to PDF's which provide valuable information to adversaries.
+2. Weaponization: Vector of attack being determined.
+3. Delivery: Attack being delivered via emails, USB sticks, trojans, etc.
+4. Exploitation: Execuation of the exploit.
+5. Installation: Installing the payload.
+6. Command and Control: Enable adversary to do what they need to achieve their task (i.e destroy a system, retrieve information, etc).
+7. Actions and Objectives: Execute tasks and objectives.
+
 #### Anti-malware History
 
 Commercial anti-virus did not come out to the market until the early 1990's. Careers were hard to combe by in computer antivirus research. The primary jobs market was to work for the computer antivirus research organization formed in 1990. The market now has over 10 billion invested in the endpoint security market.
