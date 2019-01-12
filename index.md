@@ -25,19 +25,17 @@ Commercial anti-virus did not come out to the market until the early 1990's. Car
 The primary role of an malware researcher is to follow best practices, etiquette and safe computing. Futher the researcher should be able to understand a describe the threat, create countermeasures, and approach the design from an anti-attacker perspective.
 
 #### Basic Malware/Security Definitions:
-1. White - Clean malware.
-2. Black - Dirty malware.
-3. Grey - Unsure.
-4. Sample - Peiece of malware.
-5. Goat - What you ar giving the malware (i.e virtual machines, etc).
-6. Bootkits - Master boot record infection. Hidden encrypted disk partition where malware and rootkits are executed. These were popular in the 1980's (malware popularity type comes in waves).
-7. Trojan horse - Masquerades as useful software but once installed, often create a backdoor to your computer that gives malicious users access to your system, possible allowing confidential or personal information to be compromised.
-8. Spyware - Software that collect personal information without the user’s knowledge or consent for advertorial or fraudulent purposes. 
-9. RATS - Remote Aceess Tools System Software.
-10. CVE - The Common Vulnerabilities and Exposures (CVE) system provides a reference-method for publicly known information-security vulnerabilities and exposures. 
-11. Ransomeware - Software which encrypts users files and will unencrypt them if a user is willing to pay for them.
-12. Static Analysis - Performed without the benefit of dynamic execution environment. Pros: Discover what the author intended the code to do, even if that can not be observed in lab environment. Cons: Can be expensive; out of context and external dependencies can not be evaluated.
-13. Potentially Unwanted Program (PUP, PUA, PUS) – Adware, spyware, tools.
+
+1. Sample - Peiece of malware.
+2. Goat - What you ar giving the malware (i.e virtual machines, etc).
+3. Bootkits - Master boot record infection. Hidden encrypted disk partition where malware and rootkits are executed. These were popular in the 1980's (malware popularity type comes in waves).
+4. Trojan horse - Masquerades as useful software but once installed, often create a backdoor to your computer that gives malicious users access to your system, possible allowing confidential or personal information to be compromised.
+5. Spyware - Software that collect personal information without the user’s knowledge or consent for advertorial or fraudulent purposes. 
+6. RATS - Remote Aceess Tools System Software.
+7. CVE - The Common Vulnerabilities and Exposures (CVE) system provides a reference-method for publicly known information-security vulnerabilities and exposures. 
+8. Ransomeware - Software which encrypts users files and will unencrypt them if a user is willing to pay for them.
+9. Static Analysis - Performed without the benefit of dynamic execution environment. Pros: Discover what the author intended the code to do, even if that can not be observed in lab environment. Cons: Can be expensive; out of context and external dependencies can not be evaluated.
+10. Potentially Unwanted Program (PUP, PUA, PUS) – Adware, spyware, tools.
 
 #### Malware Naming Conventions:
 The naming convention is as follows: Type:->Platform/->Family->.Varient->!Information
