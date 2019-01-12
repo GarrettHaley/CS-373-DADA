@@ -13,7 +13,7 @@ The lecturer provides one model for attack stategy which involves the following 
 3. Delivery: Attack being delivered via emails, USB sticks, trojans, etc.
 4. Exploitation: Execuation of the exploit.
 5. Installation: Installing the payload.
-6. Command and Control: Enable adversary to do what they need to achieve their task (i.e destroy a system, retrieve information, etc).
+6. Command and Control: Enables the adversary to do what they need to achieve their task (i.e destroy a system, retrieve information, etc).
 7. Actions and Objectives: Execute tasks and objectives.
 
 #### Anti-malware History
