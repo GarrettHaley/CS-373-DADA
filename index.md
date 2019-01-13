@@ -41,8 +41,10 @@ The primary role of an malware researcher is to follow best practices, etiquette
 The naming convention is as follows: Type:->Platform/->Family->.Varient->!Information
 example: Trojan:Win32/Reveton.T!Ink
 
+This standard format allows for security professionals to share information on uniquely identified malware with terms that are useful in understanding the type of malware, platform its built for, family, its varient, and additional info. Its worth also mentioning this standard is not always followed (but should be more in the future!).
+
 #### Advanced Persistent Threats:
-Term created in 2006 by US Air-force analysts, Describes three aspects of attackers that represent their profile, intent, and structure:
+Term advanced persistent threat or APT was created in 2006 by US Air-force analysts. It describes three main aspects of attackers:
 Advanced – The attacker is fluent with cyber intrusion methods and administrative techniques, and is capable of crafting custom exploits and related tools.
 Persistent – The attacker has an objective (or mission in longer-term campaigns) and works to achieve their goals without detection.
 Threat – The attacker is organized, receives instructions, is sufficiently funded to perform their (sometimes extended) operations, and is motivated.
