@@ -1,4 +1,4 @@
-## Week 1 Write Up can you see this?
+## Week 1 Write Up
 This week's write up will focus on the lecture content created by the Director of Threat Intelligence Malware Operations at McAfee Labs. Overall, I found the material to be pretty engaging and interesting. I will go over a little bit about what I learned about malware, why it exists, naming conventions, role of malware researchers, some security definitions I learned, and review aspects of Advanced Persistent Threats (APT's).
 
 #### Why Does Malware Exist?
