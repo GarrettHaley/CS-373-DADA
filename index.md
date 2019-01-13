@@ -22,7 +22,7 @@ Careers used to be hard to combe by in computer antivirus research. Commercial a
 
 #### What are the Roles of a Malware Researcher?
 
-The primary role of an malware researcher is to follow best practices, etiquette and safe computing. Futher the researcher should be able to understand a describe the threat, create countermeasures, and approach the design from an anti-attacker perspective. This involves understanding the systems the protect, adversary strategies, 
+The primary role of an malware researcher is to follow best practices, etiquette and safe computing. Futher the researcher should be able to understand a describe the threat, create countermeasures, and approach the design from an anti-attacker perspective. 
 
 #### Basic Malware/Security Definitions:
 
