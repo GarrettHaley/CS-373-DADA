@@ -123,7 +123,7 @@ After mounting the Image_USB_Mayflower.001, I was able to recover some files usi
 
 #### Conclusions
 
-This week has been an interesting look into forensics. I thought the USB analysis challenge was really interesting and a good opportunity to try out different tools from the lectures. FTK imager, FileInsight, and PhotoRec were all useful tools for my analysis. The primary focus of the lectures revolved around the incident response process, investigation process, and memory dumps. The lectures were particularly intersting coming from someone who has had extensive experience in the field.
+This week has been an interesting look into forensics. I thought the USB analysis challenge was really interesting and a good opportunity to try out different tools from the lectures. FTK imager, FileInsight, and PhotoRec were all useful tools for my analysis. The primary focus of the lectures involved the incident response process, investigation process, and memory dumps. The lectures were particularly intersting coming from someone who has had extensive experience in the field.
 
 
 
