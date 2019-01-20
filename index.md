@@ -119,7 +119,6 @@ After mounting the Image_USB_Mayflower.001, I was able to recover some files usi
 
 <img src="week2_NK3.PNG" alt="hi1" class="inline"/>
 <img src="week2_NK2.PNG" alt="hi2" class="inline"/>
-<img src="week2_NK1.PNG" alt="hi3" class="inline"/>
 <img src="week2_NK.PNG" alt="hi4" class="inline"/>
 
 
