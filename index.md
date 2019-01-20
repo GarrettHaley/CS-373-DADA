@@ -66,7 +66,7 @@ Threat – The attacker is organized, receives instructions, is sufficiently fun
 Overall, I found this week to have great content. I am taking this class because I am interested in topics like malware analyis. During the lab I had the opportunity to perform a short malware analysis using FakeNet, ProcMon, Process Explorer, Antispy, and Flypaper. Each of the tools above have different uses. FakeNet is network emulation software to deceive evil.exe to believe it is connected to the internet. ProcMon displays the active file system, thread activity, and registry. Process Explorer displays a view of running processes and allows for further exploration of process details. Antispy identifies the malware (in our case, evil.exe) and dives into files in a system. Flypaper is designed to bar the ending of threads, processes, or memory. In summary, I found the malware makes a copy of itself, creates a schedule for its copy to be run every 30 minutes, alters the hosts file, rummages through system files/directories, attempts to make itself persist in the system, and tries to download an executable from the web on to the infected system. From the information gathered, I believe the malwares identity to be profile RDN/Generic.bfr!0012B0384774 which can be found here: https://home.mcafee.com/virusinfo/virusprofile.aspx?key=2369875#none. I know that I did not find everything, but this was an excellent opportunity for me to fiddle around with some of the tools and try to wrap my head around what it actually means to perform a malware analysis. The lab can be seen on canvas.
 
 ## Week 2 Write Up
-This weeks write up will focus on the lecture content regarding advanced forensics created by the Director of Threat Intelligence Malware Operations at McAfee Labs. Overall, I found the material to be more interesting than last week. I will go over some notes from the lecture, tools introduced for forensics, and this weeks challenge: Analyzing an image of a USB drive found on a North Korean Defector.
+This weeks write up will focus on the lecture content regarding advanced forensics created by the Director of Threat Intelligence Malware Operations at McAfee Labs. Overall, I found the material to be more interesting than last week. I really thought the challenge at the end was really interesting. I will go over some notes from the lecture, tools introduced for forensics, and this weeks challenge: Analyzing an image of a USB drive found on a DPRK Defector caught close to the boarder of North and South Korea.
 
 #### What is Forensic Computing?
 
@@ -95,6 +95,15 @@ Malware related Volatility plugins/tools:
 - PSList: Shows processes based on linked lists.
 - PSScan: Shows processes based on the headers found in the “memory pool”.
 - ... A few more: svcscan, ldrmodules, impscan, apihooks, idt, gdt, callbacks, driverirp, psxview, ssdt_ex, ssdt_by_threads. 
+
+#### Analyzing the Image of a USB Drive Found on a DPRK Defector (Challenge)
+
+This week involved the challenge of analyzing an image of a USB drive found on a North Korean defector. The following was my process and results of the challenge.
+
+After listening to both clues given, I began with recovering the password to unzip the zipped directory and reveal a .csv file. This consisted of opening “don’t tell mrs Il Ung.jpg” in FileInsight and performing a simple strings analysis.
+
+<img src="/Week2_strings.PNG" alt="hi" class="inline"/>
+
 
 
 
