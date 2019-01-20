@@ -89,12 +89,12 @@ The investigation cycle includes creating a timeline analysis (according to the 
 The three primary methods to enumerate information in memory dumps are to look for printable strings, reconstruct internal data structures, and search for static signatures of kernel data structures.
 
 Malware related Volatility plugins/tools:
-Malfind: Detects hidden and injected code.
-Csrpslist: Detects hidden processes with crss.exe handles & CsrRoot-Process links.
-Orphan threads: Detects hidden kernel threads.
-PSList: Shows processes based on linked lists.
-PSScan: Shows processes based on the headers found in the “memory pool”.
-... A few more: svcscan, ldrmodules, impscan, apihooks, idt, gdt, callbacks, driverirp, psxview, ssdt_ex, ssdt_by_threads. 
+- Malfind: Detects hidden and injected code.
+- Csrpslist: Detects hidden processes with crss.exe handles & CsrRoot-Process links.
+- Orphan threads: Detects hidden kernel threads.
+- PSList: Shows processes based on linked lists.
+- PSScan: Shows processes based on the headers found in the “memory pool”.
+- ... A few more: svcscan, ldrmodules, impscan, apihooks, idt, gdt, callbacks, driverirp, psxview, ssdt_ex, ssdt_by_threads. 
 
 
 
