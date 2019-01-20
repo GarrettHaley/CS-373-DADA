@@ -113,6 +113,15 @@ Using the password found above, I was able unzip and view a .csv file which cont
 - IP: 125.135.116.39 (Target)
 - IP: 125.135.116.47 (Target)
 
+Next, I changed the bin file to run.exe as there was a hint that this file was the malware. I used a few of the tools from last week to analyze the malware. The FakeNet showed connections were attempted to 43.130.141.XXX (multiple) and 172.21.40.161. ProcMon showed the malware attempting queries from register HKLM\System\CurrentControlSet\services\NetBT\Linkage\Export
+
+After mounting the Image_USB_Mayflower.001, I was able to recover some files using PhotoRec. Here are some of the them:
+
+<img src="week2_NK3.PNG" alt="hi1" class="inline"/>
+<img src="week2_NK2.PNG" alt="hi2" class="inline"/>
+<img src="week2_NK1.PNG" alt="hi3" class="inline"/>
+<img src="week2_NK.PNG" alt="hi4" class="inline"/>
+
 
 
 
