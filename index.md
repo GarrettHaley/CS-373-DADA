@@ -104,6 +104,16 @@ After listening to both clues given, I began with recovering the password to unz
 
 <img src="Week2_strings.PNG" alt="hi" class="inline"/>
 
+Using the password found above, I was able unzip and view a .csv file which contained the following targets:
+1.  GS Caltex 
+- IP: 123.143.8.44 (Target)
+2.  S-Oil infra
+- IP: 125.135.116.33 (Target)
+- IP: 125.135.116.38 (Target)
+- IP: 125.135.116.39 (Target)
+- IP: 125.135.116.47 (Target)
+
+
 
 
 
