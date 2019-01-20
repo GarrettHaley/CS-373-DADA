@@ -70,12 +70,22 @@ This weeks write up will focus on the lecture content regarding advanced forensi
 
 #### What is Forensic Computing?
 
-Forensic Computing is the process of identifying, preserving, analyzing and presenting digital evidence in a manner that is legally acceptable” (Rodney McKemmish 1999). Essentially its the processing of discovering data of probative value from information systems using live forensics, post-mortem based forensics, and network based forensics. The four essential principles to be followed while performing computer forensics are to minimize data loss, record everything, analyze the data, and then report the findings. A key take away from the lecturer was to remember that it is not the forensic analysts job to decide if someone is innocent or guilty. It is to simply unearth facts regarding the information systems to aid in the investigation.
+According to lecture, "forensic computing is the process of identifying, preserving, analyzing and presenting digital evidence in a manner that is legally acceptable” (Rodney McKemmish 1999). Essentially its the processing of discovering data of probative value from information systems using live forensics, post-mortem based forensics, and network based forensics. The four essential principles to be followed while performing computer forensics are to minimize data loss, record everything, analyze the data, and then report the findings. A key take away from the lecturer was to remember that it is not the forensic analysts job to decide if someone is innocent or guilty. It is to simply unearth facts regarding the information systems to aid in the investigation.
+
+#### Incident Response (IC)
+
+The incident response process consists of incident response team preparation, incident detection, initial response, strategy formulation, the investigation (data collection/forensic analysis), and the reporting stage. This can lead to legal action, administrative actions, and remediation (recovering from the incident).
+
+
+##### The Investigation
+
+The investigation cycle includes creating a timeline analysis (according to the lecturer, this is primarily still done on pen and paper), media analysis, string or byte search, data recovery, and reporting analysis. Physically, the data acquisition consists of gathering memory (virtual/physical), drives or partitions, and network traffic (packet captures). Its important to remember a few things while performing an investigation.
+1. You cannot interact with a live system without having some effect on it.
+2. Powering down the suspect system can destroy critical evidence.
+3. When collecting evidence you should proceed from the volatile to the less volatile.
 
 
 
-
-#### Tools
 
 
 
