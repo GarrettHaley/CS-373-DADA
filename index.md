@@ -77,12 +77,25 @@ According to lecture, "forensic computing is the process of identifying, preserv
 The incident response process consists of incident response team preparation, incident detection, initial response, strategy formulation, the investigation (data collection/forensic analysis), and the reporting stage. This can lead to legal action, administrative actions, and remediation (recovering from the incident).
 
 
-##### The Investigation
+#### The Investigation
 
 The investigation cycle includes creating a timeline analysis (according to the lecturer, this is primarily still done on pen and paper), media analysis, string or byte search, data recovery, and reporting analysis. Physically, the data acquisition consists of gathering memory (virtual/physical), drives or partitions, and network traffic (packet captures). Its important to remember a few things while performing an investigation.
 1. You cannot interact with a live system without having some effect on it.
 2. Powering down the suspect system can destroy critical evidence.
 3. When collecting evidence you should proceed from the volatile to the less volatile.
+
+#### Memory Dumps
+
+The three primary methods to enumerate information in memory dumps are to look for printable strings, reconstruct internal data structures, and search for static signatures of kernel data structures.
+
+Malware related Volatility plugins/tools:
+Malfind: Detects hidden and injected code.
+Csrpslist: Detects hidden processes with crss.exe handles & CsrRoot-Process links.
+Orphan threads: Detects hidden kernel threads.
+PSList: Shows processes based on linked lists.
+PSScan: Shows processes based on the headers found in the “memory pool”.
+... A few more: svcscan, ldrmodules, impscan, apihooks, idt, gdt, callbacks, driverirp, psxview, ssdt_ex, ssdt_by_threads. 
+
 
 
 
