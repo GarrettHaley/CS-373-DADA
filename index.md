@@ -102,7 +102,7 @@ This week involved the challenge of analyzing an image of a USB drive found on a
 
 After listening to both clues given, I began with recovering the password to unzip the zipped directory and reveal a .csv file. This consisted of opening “don’t tell mrs Il Ung.jpg” in FileInsight and performing a simple strings analysis.
 
-<img src="/Week2_strings.PNG" alt="hi" class="inline"/>
+<img src="Week2_strings.PNG" alt="hi" class="inline"/>
 
 
 
