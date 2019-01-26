@@ -126,7 +126,12 @@ After mounting the Image_USB_Mayflower.001, I was able to recover some files usi
 This week has been an interesting look into forensics. I thought the USB analysis challenge was really interesting and a good opportunity to try out different tools from the lectures. FTK imager, FileInsight, and PhotoRec were all useful tools for my analysis. The primary focus of the lectures involved the incident response process, investigation process, and memory dumps. The lectures were particularly intersting coming from someone who has had extensive experience in the field.
 
 ## Week 3 Write Up
+This weeks write up will focus on the lecture content regarding malware defense. Specifically, the material covered places to detect, block/remove the threat, adversarial attack vectors, and attack graph/flow information.
 
+#### 4 Key things malware does
+- First contact (mediums adversaries use to reach their victims): email, instant messaging, malvertising, poisoned search results, watering hole, physical access.
+- Local execution: established through social engineering, explotation or abusing features.
+- Establishing Presence: Blending/hiding in plain sight by appearing to be legitimate (OS-like file names, signed, etc).
 
 
 
