@@ -156,7 +156,7 @@ Following the examples given in lecture, I ran the YARA tool on files in
 C:\Users\Admin\Desktop\malware\Malware Defense\Class1\Sample Group 1\, C:\Users\Admin\Desktop\malware\Malware Defense\Class1\Sample Group 2\, and C:\Users\Admin\Desktop\malware\Malware Defense\Class1\Sample Group 3\ From C:\Users\Admin\Desktop\malware\Malware Defense\Class1\Sample Group 1\ I found "AikaQ" and "Jenna Jam" matched to all files in the /sytro directory. This can be seen below:
 
 <img src="week3_yara-0.PNG" alt="hi1" class="inline"/>
-<img src="week3_yaraa-1.PNG" alt="hi1" class="inline"/>
+<img src="week3_yara-1.PNG" alt="hi1" class="inline"/>
 
 
 
