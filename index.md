@@ -144,22 +144,34 @@ This weeks write up will focus on the lecture content regarding malware defense.
 - Establish Presence: Host: Anti-virus, Whitelisting, HIPS, Network: Firewall, Network IPS, Web: IP, Domain, & URL reputation.
 - Malicious Activity: Host: Anti-virus, Network: NIPS, Firewall, Web: IP, Domain, URL rep & content filtering, Data Loss Prevention.
 
+#### Advantages and Disadvantages of Anti-malware Automation
+Advantages: Scalable, consistent, and lower performance concern.
+Disadvantages: Potential context issue, prone to invasion, and an increase in denial of services attacks and probing.
+
 #### YARA
 
 YARA is the pattern matching Swiss knife for malware researchers. Using YARA, strings can be followed by nocase (case insensitive), wide (strips zeroes in unicode strings), wide ascii (searches both wide and ascii strings), fullword (full delimited strings), Byte patterns (Hexadecimal strings), Accepts “?” and “??” wildcards, or Jumps to denote a number of wildcards.
 
 Inside YARA there is a rule browser (list of previously saved rules), an IDE (where you write code), malware broswer (browse samples to run on), an inspector (shares malware, name, path, size, md5, and sha1 information), and the rules generator (this will find all common strings among samples, but the rules are not very good).
 
-#### Malware Defense Lab 
+#### Malware Defense Lab (YARA)
 
 Following the examples given in lecture, I ran the YARA tool on files in 
-C:\Users\Admin\Desktop\malware\Malware Defense\Class1\Sample Group 1\, C:\Users\Admin\Desktop\malware\Malware Defense\Class1\Sample Group 2\, and C:\Users\Admin\Desktop\malware\Malware Defense\Class1\Sample Group 3\ From C:\Users\Admin\Desktop\malware\Malware Defense\Class1\Sample Group 1\ I found "AikaQ" and "Jenna Jam" matched to all files in the /sytro directory. This can be seen below:
+- C:\Users\Admin\Desktop\malware\Malware Defense\Class1\Sample Group 1\
+- C:\Users\Admin\Desktop\malware\Malware Defense\Class1\Sample Group 2\ 
+- C:\Users\Admin\Desktop\malware\Malware Defense\Class1\Sample Group 3\ 
+
+From C:\Users\Admin\Desktop\malware\Malware Defense\Class1\Sample Group 1\ I found "AikaQ" and "Jenna Jam" matched to all files in the /sytro directory. This can be seen below:
 
 <img src="week3_yara-0.PNG" alt="hi1" class="inline"/>
 <img src="week3_yara-1.PNG" alt="hi1" class="inline"/>
 
 Following the same process from C:\Users\Admin\Desktop\malware\Malware Defense\Class1\Sample Group 1\, the files in C:\Users\Admin\Desktop\malware\Malware Defense\Class1\Sample Group 2\ matched with "DownloaderActiveX" and the files in C:\Users\Admin\Desktop\malware\Malware Defense\Class1\Sample Group 3\  matched with “TuguuAdw”.
 
+#### Cuckoo 
+Cuckoo is an automated malware analysis tool that allows you to understand what a given file does when executed inside an isolated environment. It can bypass sleep bombs by intelligently skipping sleeps, emulate user interaction by moving mouse and pushing buttons, randomize the system clock with each run, and use a randomly named cuckoomon.dll.
+
+An analysis using Cuckoo would look like an isolated vpn with clean environments to run a sample, and a Cuckoo host which is responsable for guest and analysis management of the environments running the samples (the internet/sinkhole). More specifically, it traces win32 API calls performed by all processes spawned by the malware, tracks files being created, deleted and downloaded by the malware during its execution, gets memory dumps of the malware processes, provides network traffic trace in PCAP format, contains screenshots of Windows desktop taken during the execution of the malware, and full memory dumps of the infected machines.
 
 
 
