@@ -158,7 +158,7 @@ C:\Users\Admin\Desktop\malware\Malware Defense\Class1\Sample Group 1\, C:\Users\
 <img src="week3_yara-0.PNG" alt="hi1" class="inline"/>
 <img src="week3_yara-1.PNG" alt="hi1" class="inline"/>
 
-Following the same process from C:\Users\Admin\Desktop\malware\Malware Defense\Class1\Sample Group 1\, C:\Users\Admin\Desktop\malware\Malware Defense\Class1\Sample Group 2\ yielded the "DownloaderActiveX" string in every file and C:\Users\Admin\Desktop\malware\Malware Defense\Class1\Sample Group 3\  yielded the “TuguuAdw” string in every file.
+Following the same process from C:\Users\Admin\Desktop\malware\Malware Defense\Class1\Sample Group 1\, the files in C:\Users\Admin\Desktop\malware\Malware Defense\Class1\Sample Group 2\ matched with "DownloaderActiveX" and the files in C:\Users\Admin\Desktop\malware\Malware Defense\Class1\Sample Group 3\  matched with “TuguuAdw”.
 
 
 
