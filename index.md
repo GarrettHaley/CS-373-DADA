@@ -128,11 +128,20 @@ This week has been an interesting look into forensics. I thought the USB analysi
 ## Week 3 Write Up
 This weeks write up will focus on the lecture content regarding malware defense. Specifically, the material covered places to detect, block/remove the threat, adversarial attack vectors, and attack graph/flow information.
 
-#### 4 Key things malware does
+#### Key Malware Activities
 - First contact (mediums adversaries use to reach their victims): email, instant messaging, malvertising, poisoned search results, watering hole, physical access.
 - Local execution: established through social engineering, explotation or abusing features.
 - Establishing Presence: Blending/hiding in plain sight by appearing to be legitimate (OS-like file names, signed, etc).
+- Malicious Activity (Information is harvested):
+1. Enumerating docs, passwords, processes, etc.
+2. Applying a hook via browser, a keylogger, etc.
+3. Getting log information.
 
+#### Detect, Block, or Undo Attacks at Each Stage?
+- First Contact: Spam: Anti-spam, Network: Firewall, Network IPS, Web: IP, Domain, & URL reputation, Physical access: Disk encryption.
+- Local Execution: Spam: Client-side content filtering, Network: Network IPS, Web: Content filtering/scanning,Host: Host IPS, Anti-virus, Whitelisting.
+- Establish Presence: Host: Anti-virus, Whitelisting, HIPS, Network: Firewall, Network IPS, Web: IP, Domain, & URL reputation.
+- Malicious Activity: Host: Anti-virus, Network: NIPS, Firewall, Web: IP, Domain, URL rep & content filtering, Data Loss Prevention.
 
 
 
