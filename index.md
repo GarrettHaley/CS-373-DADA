@@ -137,15 +137,26 @@ This weeks write up will focus on the lecture content regarding malware defense.
 2. Applying a hook via browser, a keylogger, etc.
 3. Getting log information.
 
-#### Detect, Block, or Undo Attacks at Each Stage?
+#### Detect, Block, or Undo Attacks at Each Stage?
+
 - First Contact: Spam: Anti-spam, Network: Firewall, Network IPS, Web: IP, Domain, & URL reputation, Physical access: Disk encryption.
 - Local Execution: Spam: Client-side content filtering, Network: Network IPS, Web: Content filtering/scanning,Host: Host IPS, Anti-virus, Whitelisting.
 - Establish Presence: Host: Anti-virus, Whitelisting, HIPS, Network: Firewall, Network IPS, Web: IP, Domain, & URL reputation.
 - Malicious Activity: Host: Anti-virus, Network: NIPS, Firewall, Web: IP, Domain, URL rep & content filtering, Data Loss Prevention.
 
+#### YARA
 
+YARA is the pattern matching Swiss knife for malware researchers. Using YARA, strings can be followed by nocase (case insensitive), wide (strips zeroes in unicode strings), wide ascii (searches both wide and ascii strings), fullword (full delimited strings), Byte patterns (Hexadecimal strings), Accepts “?” and “??” wildcards, or Jumps to denote a number of wildcards.
 
+Inside YARA there is a rule browser (list of previously saved rules), an IDE (where you write code), malware broswer (browse samples to run on), an inspector (shares malware, name, path, size, md5, and sha1 information), and the rules generator (this will find all common strings among samples, but the rules are not very good).
 
+#### Malware Defense Lab 
+
+Following the examples given in lecture, I ran the YARA tool on files in 
+C:\Users\Admin\Desktop\malware\Malware Defense\Class1\Sample Group 1\, C:\Users\Admin\Desktop\malware\Malware Defense\Class1\Sample Group 2\, and C:\Users\Admin\Desktop\malware\Malware Defense\Class1\Sample Group 3\ From C:\Users\Admin\Desktop\malware\Malware Defense\Class1\Sample Group 1\ I found "AikaQ" and "Jenna Jam" matched to all files in the /sytro directory. This can be seen below:
+
+<img src="week3_yara-0.PNG" alt="hi1" class="inline"/>
+<img src="week3_yaraa-1.PNG" alt="hi1" class="inline"/>
 
 
 
