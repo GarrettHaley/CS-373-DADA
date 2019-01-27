@@ -126,25 +126,43 @@ After mounting the Image_USB_Mayflower.001, I was able to recover some files usi
 This week has been an interesting look into forensics. I thought the USB analysis challenge was really interesting and a good opportunity to try out different tools from the lectures. FTK imager, FileInsight, and PhotoRec were all useful tools for my analysis. The primary focus of the lectures involved the incident response process, investigation process, and memory dumps. The lectures were particularly intersting coming from someone who has had extensive experience in the field.
 
 ## Week 3 Write Up
-This weeks write up will focus on the lecture content regarding malware defense. Specifically, the material covered places to detect, block/remove the threat, adversarial attack vectors, and attack graph/flow information.
+
+This weeks write up will focus on the lecture content regarding malware defense. Specifically, the material covered places to detect, block/remove a threat, adversarial attack vectors, and attack graph/flow information. The end of the write up will contain the YARA lab as well as the blog asked for from this week's lecturer (scroll to the bottom of this weeks write up to see this).
 
 #### Key Malware Activities
-- First contact (mediums adversaries use to reach their victims): email, instant messaging, malvertising, poisoned search results, watering hole, physical access.
-- Local execution: established through social engineering, explotation or abusing features.
+
+- First contact (mediums adversaries use to reach their victims): Email, instant messaging, malvertising, poisoned search results, watering hole, physical access.
+- Local execution: Established through social engineering, explotation or abusing features.
 - Establishing Presence: Blending/hiding in plain sight by appearing to be legitimate (OS-like file names, signed, etc).
-- Malicious Activity (Information is harvested):
+- Malicious Activity (information is harvested):
 1. Enumerating docs, passwords, processes, etc.
 2. Applying a hook via browser, a keylogger, etc.
 3. Getting log information.
 
 #### Detect, Block, or Undo Attacks at Each Stage?
 
-- First Contact: Spam: Anti-spam, Network: Firewall, Network IPS, Web: IP, Domain, & URL reputation, Physical access: Disk encryption.
-- Local Execution: Spam: Client-side content filtering, Network: Network IPS, Web: Content filtering/scanning,Host: Host IPS, Anti-virus, Whitelisting.
-- Establish Presence: Host: Anti-virus, Whitelisting, HIPS, Network: Firewall, Network IPS, Web: IP, Domain, & URL reputation.
-- Malicious Activity: Host: Anti-virus, Network: NIPS, Firewall, Web: IP, Domain, URL rep & content filtering, Data Loss Prevention.
+- First Contact: 
+1. Spam: Anti-spam.
+2. Network: Firewall.
+3. Network IPS, Web: IP, Domain, and URL reputation.
+4. Physical access: Disk encryption.
+- Local Execution: 
+1. Spam: Client-side content filtering.
+2. Network: Network IPS.
+3. Web: Content filtering/scanning.
+4. Host: Host IPS, Anti-virus, Whitelisting.
+- Establish Presence: 
+1. Host: Anti-virus.
+2. Whitelisting, HIPS.
+3. Network: Firewall.
+4. Network IPS, Web: IP, Domain, & URL reputation.
+- Malicious Activity: 
+1. Host: Anti-virus.
+2. Network: NIPS, Firewall.
+3. Web: IP, Domain, URL rep & content filtering, Data Loss Prevention.
 
 #### Advantages and Disadvantages of Anti-malware Automation
+
 Advantages: Scalable, consistent, and lower performance concern.
 Disadvantages: Potential context issue, prone to invasion, and an increase in denial of services attacks and probing.
 
@@ -179,7 +197,7 @@ Saturday, January 26, 2019 (PST)
 MD5 Malware Hash: 068D5B62254DC582F3697847C16710B7  
 MD5 YARA Hash:    144de687e53db1eed2be97d749358cdc
 
-While there are an increasing number of malware authors who are using encryption and obfuscation to modify the static contents of malware to thwart security researchers from static-based clustering, there are many instances of malware which are not making the necessary attempts to hide their behaviors. This allows researchers to devise systems of identifying such malware. If such malware is not identified, your sensitive personal information may be at risk from malware like the chinese trojan discussed in this article.
+While there are an increasing number of malware authors who are using encryption and obfuscation to modify the static contents of malware to thwart security researchers from static-based clustering, there are many instances of malware which are not making the necessary attempts to hide its behavior. This allows researchers to devise systems of identifying such malware. If such malware is not identified, your sensitive personal information may be at risk from malware like the chinese trojan discussed in this article.
 
 
 #### Origin of Identification
