@@ -154,7 +154,7 @@ YARA is the pattern matching Swiss knife for malware researchers. Using YARA, st
 
 Inside YARA there is a rule browser (list of previously saved rules), an IDE (where you write code), malware broswer (browse samples to run on), an inspector (shares malware, name, path, size, md5, and sha1 information), and the rules generator (this will find all common strings among samples, but the rules are not very good).
 
-#### Malware Defense Lab (YARA)
+#### YARA Lab
 
 Following the examples given in lecture, I ran the YARA tool on files in 
 - C:\Users\Admin\Desktop\malware\Malware Defense\Class1\Sample Group 1\
@@ -172,6 +172,15 @@ Following the same process from C:\Users\Admin\Desktop\malware\Malware Defense\C
 Cuckoo is an automated malware analysis tool that allows you to understand what a given file does when executed inside an isolated environment. It can bypass sleep bombs by intelligently skipping sleeps, emulate user interaction by moving mouse and pushing buttons, randomize the system clock with each run, and use a randomly named cuckoomon.dll.
 
 An analysis using Cuckoo would look like an isolated vpn with clean environments to run a sample, and a Cuckoo host which is responsable for guest and analysis management of the environments running the samples (the internet/sinkhole). More specifically, it traces win32 API calls performed by all processes spawned by the malware, tracks files being created, deleted and downloaded by the malware during its execution, gets memory dumps of the malware processes, provides network traffic trace in PCAP format, contains screenshots of Windows desktop taken during the execution of the malware, and full memory dumps of the infected machines.
+
+#### Malware Defense BLOG - Trojan Steals Passwords and Other Sensitive Information -
+Author: Garrett Haley
+Saturday, January 26, 2019 (PST)
+MD5 Malware Hash: 068D5B62254DC582F3697847C16710B7
+MD5 YARA Hash: 
+
+##### Origin of Identification
+
 
 
 
