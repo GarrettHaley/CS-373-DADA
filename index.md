@@ -192,7 +192,10 @@ To verify that we have indeed identified the malware, more evidence is needed. M
 
 ##### How to tell if you are Infected
 
-Based on the activities identified during the original malware identification, I have created a yara file which can can be seen below to test a file for potential infection. The activities targeted with the YARA file are the strange address referenced containing "GetTuPian", the executables "QQLogin.exe", "DNF.exe", register alterations "RegSetValue" and "Keyboard". 
+<img src="week3_lab_yara.PNG" alt="hi51" class="inline"/>
+
+Based on the activities identified during the original malware identification, I have created a yara file which can can be seen above to test a file for potential infection. The activities targeted with the YARA file are the strange address referenced containing "GetTuPian", the executables "QQLogin.exe", "DNF.exe", register alterations "RegSetValue" and "Keyboard".
+
 
 
 
