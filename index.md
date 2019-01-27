@@ -174,10 +174,10 @@ Cuckoo is an automated malware analysis tool that allows you to understand what 
 An analysis using Cuckoo would look like an isolated vpn with clean environments to run a sample, and a Cuckoo host which is responsable for guest and analysis management of the environments running the samples (the internet/sinkhole). More specifically, it traces win32 API calls performed by all processes spawned by the malware, tracks files being created, deleted and downloaded by the malware during its execution, gets memory dumps of the malware processes, provides network traffic trace in PCAP format, contains screenshots of Windows desktop taken during the execution of the malware, and full memory dumps of the infected machines.
 
 #### Malware Defense BLOG - Trojan Steals Passwords and Other Sensitive Information -
-Author: Garrett Haley
-Saturday, January 26, 2019 (PST)
-MD5 Malware Hash: 068D5B62254DC582F3697847C16710B7
-MD5 YARA Hash: 
+Author: Garrett Haley  
+Saturday, January 26, 2019 (PST)  
+MD5 Malware Hash: 068D5B62254DC582F3697847C16710B7  
+MD5 YARA Hash:   
 
 ##### Origin of Identification
 
