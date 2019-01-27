@@ -186,7 +186,7 @@ While there are an increasing number of malware authors who are using encrption 
 
 While performing a simple strings analysis on the potential malware, key terms such as "QQLogin.exe","GetTuPian.asp", "DNF.exe", “RegSetValue”, "Keyboard" and many more were discovered. When cross referenced online, there is a strong indication the file may be a trojan that steals passwords and other sensitive information. The trojan can send the information to a remote machine. The file is run-time compressed using UPX. 
 
-<img src="week3_exe-1.PNG" alt="hi51" class="inline"/>
+<img src="week3_exe_1.PNG" alt="hi51" class="inline"/>
 
 To verify that we have indeed identified the malware, more evidence is needed. More strings such as "del%x.bat" and "%x" further incriminate the file as "del%x.bat" is most likely references deleting a batch file which has some sort of name randomization happening which would make the software more difficult for anti-malware programs to detect. Further, during program execution, there is an attempt to add a registry key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run -> c:\qusla.exe. This program performs a lot of registry activities related to the keyboard (RegEnumKey for HKLM\System\CurrentControlSet\Control\Keyboard Layouts, Registry activity for HKCU\Control Panel\Input Method\Hot Keys). This indicates there may be some sort of keylogger involved.
 
