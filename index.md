@@ -164,7 +164,7 @@ This weeks write up will focus on the lecture content regarding malware defense.
 #### Advantages and Disadvantages of Anti-malware Automation
 
 Advantages: Scalable, consistent, and lower performance concern.  
-
+  
 Disadvantages: Potential context issue, prone to invasion, and an increase in denial of services attacks and probing.
 
 #### YARA
