@@ -173,16 +173,31 @@ Cuckoo is an automated malware analysis tool that allows you to understand what 
 
 An analysis using Cuckoo would look like an isolated vpn with clean environments to run a sample, and a Cuckoo host which is responsable for guest and analysis management of the environments running the samples (the internet/sinkhole). More specifically, it traces win32 API calls performed by all processes spawned by the malware, tracks files being created, deleted and downloaded by the malware during its execution, gets memory dumps of the malware processes, provides network traffic trace in PCAP format, contains screenshots of Windows desktop taken during the execution of the malware, and full memory dumps of the infected machines.
 
-#### Malware Defense BLOG - Trojan Steals Passwords and Other Sensitive Information -
+#### Malware Defense BLOG - Chinese Trojan can Steal Passwords and Other Sensitive Information from your Computer -
 Author: Garrett Haley  
 Saturday, January 26, 2019 (PST)  
 MD5 Malware Hash: 068D5B62254DC582F3697847C16710B7  
-MD5 YARA Hash:   
+MD5 YARA Hash:    144de687e53db1eed2be97d749358cdc
+
+While there are an increasing number of malware authors who are using encrption and obfuscation to modify the static contents of malware to thwart security researchers from static-based clustering, there are many instances of malware which are not making the necessary attempts to hide their behaviors. This allows researchers to devise systems of identifying such malware. If such malware is not identified, your sensitive personal information may be at risk from malware like the chinese trojan discussed in this article.
+
 
 ##### Origin of Identification
 
+While performing a simple strings analysis on the potential malware, key terms such as "QQLogin.exe","GetTuPian.asp", "DNF.exe", “RegSetValue”, "Keyboard" and many more were discovered. When cross referenced online, there is a strong indication the file may be a trojan that steals passwords and other sensitive information. The trojan can send the information to a remote machine. The file is run-time compressed using UPX. 
+
+<img src="week3_exe-1.PNG" alt="hi51" class="inline"/>
+
+To verify that we have indeed identified the malware, more evidence is needed. More strings such as "del%x.bat" and "%x" further incriminate the file as "del%x.bat" is most likely references deleting a batch file which has some sort of name randomization happening which would make the software more difficult for anti-malware programs to detect. Further, during program execution, there is an attempt to add a registry key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run -> c:\qusla.exe. This program performs a lot of registry activities related to the keyboard (RegEnumKey for HKLM\System\CurrentControlSet\Control\Keyboard Layouts, Registry activity for HKCU\Control Panel\Input Method\Hot Keys). This indicates there may be some sort of keylogger involved.
+
+##### How to tell if you are Infected
+
+Based on the activities identified during the original malware identification, I have created a yara file which can can be seen below to test a file for potential infection. The activities targeted with the YARA file are the strange address referenced containing "GetTuPian", the executables "QQLogin.exe", "DNF.exe", register alterations "RegSetValue" and "Keyboard". 
 
 
+
+
+.
 
 
 
