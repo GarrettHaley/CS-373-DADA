@@ -179,7 +179,7 @@ Saturday, January 26, 2019 (PST)
 MD5 Malware Hash: 068D5B62254DC582F3697847C16710B7  
 MD5 YARA Hash:    144de687e53db1eed2be97d749358cdc
 
-While there are an increasing number of malware authors who are using encrption and obfuscation to modify the static contents of malware to thwart security researchers from static-based clustering, there are many instances of malware which are not making the necessary attempts to hide their behaviors. This allows researchers to devise systems of identifying such malware. If such malware is not identified, your sensitive personal information may be at risk from malware like the chinese trojan discussed in this article.
+While there are an increasing number of malware authors who are using encryption and obfuscation to modify the static contents of malware to thwart security researchers from static-based clustering, there are many instances of malware which are not making the necessary attempts to hide their behaviors. This allows researchers to devise systems of identifying such malware. If such malware is not identified, your sensitive personal information may be at risk from malware like the chinese trojan discussed in this article.
 
 
 ##### Origin of Identification
