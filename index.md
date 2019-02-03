@@ -215,7 +215,7 @@ To verify that we have indeed identified the malware, more evidence is needed. M
 
 Based on the activities identified during the original malware identification, I have created a YARA file which can can be seen above to test a file for potential infection. The activities targeted with the YARA file are the strange address referenced containing "GetTuPian", the executables "QQLogin.exe", "DNF.exe", register alterations "RegSetValue" and "Keyboard".
 
-
+## Week 4 Write Up
 
 
 
