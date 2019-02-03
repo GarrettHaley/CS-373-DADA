@@ -255,10 +255,10 @@ Extensions:
  Input Validation: Memory corruption, injection.  
  
  #### Getting Code Execution (Stack)
- Step 1: Crash Triage. This consists of discovering what us (the attacker) controls, e.g what registers container attacker-controlled data, what registers point to attacker-controlled data, is the data on the stack or heap, is the controlled data critical, etc.
- Step 2: Determine the return address offset, e.g how many bytes to the return address. 
- Step 3: Position shellcode: provide NOP sleds (0x90's) to code.
- Step 4: Find the address of the shellcode: Use this to overwrite the return address to return to your desired shell code.
+ Step 1: Crash Triage. This consists of discovering what us (the attacker) controls, e.g what registers container attacker-controlled data, what registers point to attacker-controlled data, is the data on the stack or heap, is the controlled data critical, etc.  
+ Step 2: Determine the return address offset, e.g how many bytes to the return address.  
+ Step 3: Position shellcode: provide NOP sleds (0x90's) to code.  
+ Step 4: Find the address of the shellcode: Use this to overwrite the return address to return to your desired shell code.  
  
  #### The heap
  
