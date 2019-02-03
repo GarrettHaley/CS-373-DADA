@@ -217,9 +217,57 @@ Based on the activities identified during the original malware identification, I
 
 ## Week 4 Write Up
 
+This week's write up will focus on the lecture content created by Brad Anton. This consisted of discussing real life hacking and trends, exploits, and WinDBB. Overall, this was my favorite week so far. I thought Brad was pretty entertaining and knowledgeable. I will say it may have been difficult to follow some of what he said if I hadn't taken CS 519 (Cyber Attacks and Defense) last quarter. I thought he did a good job reviewing some of what I learned from that class as well as add his own material.
 
+#### Manipulating Software
 
-.
+This week began with Brad speaking generally about what software manipulation is. Essentially it boils down to finding bugs which alter the behavior of programs and take advantage of a misconfiguration or poor programming practices. The example he gave the class was a simple road example. Imagine you are in a program driving a vehicle and their is a choice to turn left or right with an input prompt. What are your choices? Well, the programmer only gave you two choices: left or right. But what if you try going forwards instead? This may lead to a potential path the programmer had not envisioned. On this path, you may find some adversarial advantages.
+
+Brad went on to talk a little bit about how things have changed in his lifetime. In the internets infancy stages, hacking usually took on less harmful dimensions than what we say today. Website defacement, denial of services attacks were the norm. As we have become more  reliant on the internet and our connected devices, a much higher level of threat sophistication and malice has increased. Brad briefly discussed cyber armies and bug bounty programs to further show how much money and energy is now spent in the cyber security domain.
+
+#### Defintions:
+- Memory Corruption: Accessing memory in an invalid way which results in an undefined behavior.
+- Exploitation: Taking advantage of a vulnerability. This consists of a vulnerability trigger and payload.
+- Vulnerability Trigger: Invokes the software bug to obtain control of the program.
+- Payload: Action to be performed when control is obtained. Typtically contains shell code.
+- Shell Code: Usually assembly code to execute a shell (e.g. /bin/sh).
+#### WinDBG Introductions
+
+WinDBG was introduced during the first lecture as well as a walkthrough challenge with posted solutions in which we had to attach WinDBG to a running internet explorer process. We were introduced to the following commands in WinDBG:
+- Viewing Memory: dd, da, du
+- Breakpoints: bp <addr>
+- Clear all: bc *
+- Stepping: t, p
+- Disassembly: View->Disass.
+- Conversion: .formats
+- Math: ?1+1
+- Modules: lm
+Extensions:
+- Process (inc heap): !peb
+- Thread (inc stack): !teb
+- What Addr?: !address
+ 
+ #### Flaw Classes and Vulnerabilities Examples
+ 
+ Configuration flaw: A weak password.  
+ Logic flaw: Authorization issues.  
+ Storage: Inadequate Encryption.  
+ Input Validation: Memory corruption, injection.  
+ 
+ #### Getting Code Execution (Stack)
+ Step 1: Crash Triage. This consists of discovering what us (the attacker) controls, e.g what registers container attacker-controlled data, what registers point to attacker-controlled data, is the data on the stack or heap, is the controlled data critical, etc.
+ Step 2: Determine the return address offset, e.g how many bytes to the return address. 
+ Step 3: Position shellcode: provide NOP sleds (0x90's) to code.
+ Step 4: Find the address of the shellcode: Use this to overwrite the return address to return to your desired shell code.
+ 
+ #### The heap
+ 
+ The second lecture spent time on attempting to perform a heap overflow on an object which control had been overturned by an adversary. A heap overflow is a type of buffer overflow which occures in the heap data area and is different than the stack overflows discussed in the previous lecture. In this strucutre, memory is dynamically allocated by an application during runtime and contains program data. By controlling an object in the program data it is possible to corrupt the data in a specific way which causes internal structures, e.g, a program function pointer. Brad went over various tools like "Page Heap" which is designed for debugging the heap which can be enabled via gflags to free an object and the !heap WinDbg extension which helps to discover heap information (and more).
+  
+ 
+ 
+ 
+ 
 
 
 
