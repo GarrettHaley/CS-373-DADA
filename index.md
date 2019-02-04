@@ -217,13 +217,13 @@ Based on the activities identified during the original malware identification, I
 
 ## Week 4 Write Up
 
-This week's write up will focus on the lecture content created by Brad Anton. This consisted of discussing real life hacking and trends, exploits, and WinDBB. Overall, this was my favorite week so far. I thought Brad was pretty entertaining and knowledgeable. I will say it may have been difficult to follow some of what he said if I hadn't taken CS 519 (Cyber Attacks and Defense) last quarter. I thought he did a good job reviewing some of the basics of what I learned from that class as well as add his own material.
+This week's write up will focus on the lecture content created by Brad Anton. This consisted of discussing hacking trends, exploits, and WinDBB. Overall, this was my favorite week so far. I thought Brad was pretty entertaining and knowledgeable. I will say it may have been difficult to follow some of what he said if I hadn't taken CS 519 (Cyber Attacks and Defense) last quarter. I thought he did a good job reviewing some of the basics of what I learned from that class as well as add some material.
 
 #### Manipulating Software  
 
-This week began with Brad speaking generally about what software manipulation is. Essentially it boils down to finding bugs which alter the behavior of programs and take advantage of a misconfiguration or poor programming practices. The example he gave the class was a simple road example. Imagine you are in a program driving a vehicle and their is a choice to turn left or right with an input prompt. What are your choices? Well, the programmer only gave you two choices: left or right. But what if you try going forwards instead? This may lead to a potential path the programmer had not envisioned. On this path, you may find some adversarial advantages.
+This week began with a discussion about what software manipulation is. Essentially it boils down to finding bugs which alter the behavior of a program in an unintended way which allows for an adversary to take advantage of a misconfiguration or poor programming practices. The example Brian gave was a simple road example. Imagine you are in a program driving a vehicle and their is a choice to turn left or right with an input prompt. What are your choices? Well, the programmer only gave you two choices: left or right. But what if you try going forwards instead? This may lead to a potential path the programmer had not envisioned. On this path, you may find some advantages.
 
-Brad went on to talk a little bit about how things have changed in his lifetime. In the internets infancy stages, hacking usually took on less harmful dimensions than what we say today. Website defacement, denial of services attacks were the norm. As we have become more  reliant on the internet and our connected devices, a much higher level of threat sophistication and malice has increased. Brad briefly discussed cyber armies and bug bounty programs to further show how much money and energy is now spent in the cyber security domain.
+Brad went on to discuss how things have changed in his lifetime. In the past, hacking usually took on less harmful dimensions than what we say today. Website defacement, denial of services attacks were the norm. As we have become more  reliant on the internet and related connected devices, a much higher level of threat sophistication and malice has been achieved by adversaries. Brad briefly discussed cyber armies and bug bounty programs to further show the increase in money and energy now spent in the cyber security domain.
 
 #### Defintions:  
 
@@ -234,7 +234,7 @@ Brad went on to talk a little bit about how things have changed in his lifetime.
 - Shell Code: Usually assembly code to execute a shell (e.g. /bin/sh).  
 
 #### WinDBG Introductions 
-WinDBG was introduced during the first lecture as well as a walkthrough challenge with posted solutions in which we had to attach WinDBG to a running internet explorer process. We were introduced to the following commands in WinDBG:
+WinDBG was introduced during the first lecture and a walkthrough challenge was posted (with solutions). We attached WinDBG to a running internet explorer process. We were introduced to the following commands in WinDBG:
  
  - Viewing Memory: dd, da, du
 - Breakpoints: bp <addr>
@@ -251,25 +251,25 @@ Extensions:
  
 #### Flaw Classes and Vulnerabilities Examples
 
- Configuration flaw: A weak password.  
- Logic flaw: Authorization issues.  
- Storage: Inadequate Encryption.  
- Input Validation: Memory corruption, injection. 
+ Configuration flaw: A service or system which was set up incorrectly. Eg: A weak password.
+ Logic flaw: A service or system containing a design flaw. Eg: softAuthorization issues. 
+ Storage flaw: A flaw in protecting system storage. Eg: Inadequate Encryption.  
+ Input Validation: A system or service corruption due to a validation flaw. Eg: Memory corruption, injection. 
  
 #### Getting Code Execution (Stack)
 
-Step 1: Crash Triage. This consists of discovering what us (the attacker) controls, e.g what registers container attacker-controlled data, what registers point to attacker-controlled data, is the data on the stack or heap, is the controlled data critical, etc.  
+Step 1: Crash Triage. This consists of discovering what the attacker controls, e.g what registers contain attacker-controlled data, what registers point to attacker-controlled data, is the data on the stack or heap, is the controlled data critical, etc.  
 Step 2: Determine the return address offset, e.g how many bytes to the return address.  
 Step 3: Position shellcode: provide NOP sleds (0x90's) to code.  
 Step 4: Find the address of the shellcode: Use this to overwrite the return address to return to your desired shell code.
 
 #### Getting Code Execution (Heap)
 
-The second lecture spent time on attempting to perform a heap overflow on an object which control had been overturned by an adversary. A heap overflow is a type of buffer overflow which occures in the heap data area and is different than the stack overflows discussed in the previous lecture. In this structure, memory is dynamically allocated by an application during runtime and contains program data. By controlling an object in the program data it is possible to corrupt the data in a specific way which causes internal structures, e.g, a program function pointer. Brad went over various tools like "Page Heap" which is designed for debugging the heap which can be enabled via gflags to free an object and the !heap WinDbg extension which helps to discover heap information (and more).
+The second lecture focused on performing a heap overflow. A heap overflow is a type of buffer overflow which occures in the heap data area and is different than the stack overflows discussed in the previous lecture. In this structure, memory is dynamically allocated by an application during runtime and contains program data. By controlling an object in the program data it is possible to corrupt the data in a specific way which causes internal structures, e.g, a program function pointer. Brad went over various tools like "Page Heap" which is designed for debugging the heap which can be enabled via gflags to free an object and the !heap WinDbg extension which helps to discover heap information (and more).
 
 #### Conclusions
  
-Overall, I enjoyed the material this week. The heap and stack overflow attacks were mostly review for me from CS 519. The tools and some of the vocabulary (ex: crash triage) were new to me. Last summer I had the opportunity to do some penetration testing during my last internship. I thought this information was pretty valuable and related to what I will be doing directly after graduation.
+Overall, I enjoyed the material this week. The heap and stack overflow attacks were mostly review for me from CS 519. The tools and some of the vocabulary (ex: crash triage) were new to me. Last summer I had the opportunity to do some penetration testing during an internship. I thought this information was pretty valuable, and directly related to what I will be doing directly after graduation.
  
  
   
