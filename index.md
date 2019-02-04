@@ -262,11 +262,11 @@ Extensions:
  
  #### The heap
  
- The second lecture spent time on attempting to perform a heap overflow on an object which control had been overturned by an adversary. A heap overflow is a type of buffer overflow which occures in the heap data area and is different than the stack overflows discussed in the previous lecture. In this strucutre, memory is dynamically allocated by an application during runtime and contains program data. By controlling an object in the program data it is possible to corrupt the data in a specific way which causes internal structures, e.g, a program function pointer. Brad went over various tools like "Page Heap" which is designed for debugging the heap which can be enabled via gflags to free an object and the !heap WinDbg extension which helps to discover heap information (and more).
+ The second lecture spent time on attempting to perform a heap overflow on an object which control had been overturned by an adversary. A heap overflow is a type of buffer overflow which occures in the heap data area and is different than the stack overflows discussed in the previous lecture. In this structure, memory is dynamically allocated by an application during runtime and contains program data. By controlling an object in the program data it is possible to corrupt the data in a specific way which causes internal structures, e.g, a program function pointer. Brad went over various tools like "Page Heap" which is designed for debugging the heap which can be enabled via gflags to free an object and the !heap WinDbg extension which helps to discover heap information (and more).
   
- 
- 
- 
+  #### Conclusions
+  
+  Overall, I enjoyed the material this week. The heap and stack overflow attacks were mostly review for me from CS 519. The tools and some of the vocabulary (ex: crash triage) were new to me. Last summer I had the opportunity to do some penetration testing during my last internship. I thought this information was pretty valuable and related to what I will be doing directly after graduation.
  
 
 
