@@ -249,10 +249,10 @@ Extensions:
 - Thread (inc stack): !teb
 - What Addr?: !address 
  
-#### HERE
-#### HERE
-#### HERE 
-#### HERE
+#### Flaw Classes and Vulnerabilities Examples
+#### Getting Code Execution (Stack)
+#### Getting Code Execution (Heap)
+#### Conclusions
 
 
  
