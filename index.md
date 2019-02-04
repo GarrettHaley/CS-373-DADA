@@ -217,7 +217,7 @@ Based on the activities identified during the original malware identification, I
 
 ## Week 4 Write Up
 
-This week's write up will focus on the lecture content created by Brad Anton. This consisted of discussing hacking trends, exploits, and WinDBB. Overall, this was my favorite week so far. I thought Brad was pretty entertaining and knowledgeable. I will say it may have been difficult to follow some of what he said if I hadn't taken CS 519 (Cyber Attacks and Defense) last quarter. I thought he did a good job reviewing some of the basics of what I learned from that class as well as add some material.
+This week's write up will focus on the lecture content created by Brad Anton. This consisted of discussing hacking trends, exploits, WinDBG, stack overflows, and heap overflows. Overall, this was my favorite week so far. I thought Brad was pretty entertaining and knowledgeable. I will say it may have been difficult to follow some of what he said if I hadn't taken CS 519 (Cyber Attacks and Defense) last quarter. I thought he did a good job reviewing some of the basics of what I learned from that class as well as add some material.
 
 #### Manipulating Software  
 
