@@ -250,18 +250,16 @@ Extensions:
 - What Addr?: !address 
  
 #### Flaw Classes and Vulnerabilities Examples
+
+ Configuration flaw: A weak password.  
+ Logic flaw: Authorization issues.  
+ Storage: Inadequate Encryption.  
+ Input Validation: Memory corruption, injection. 
+ 
 #### Getting Code Execution (Stack)
 #### Getting Code Execution (Heap)
 #### Conclusions
 
-
- 
- #### Flaw Classes and Vulnerabilities Examples  
- 
- Configuration flaw: A weak password.  
- Logic flaw: Authorization issues.  
- Storage: Inadequate Encryption.  
- Input Validation: Memory corruption, injection.  
  
  #### Getting Code Execution (Stack)  
  Step 1: Crash Triage. This consists of discovering what us (the attacker) controls, e.g what registers container attacker-controlled data, what registers point to attacker-controlled data, is the data on the stack or heap, is the controlled data critical, etc.  
