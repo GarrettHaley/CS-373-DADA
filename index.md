@@ -233,13 +233,8 @@ Brad went on to talk a little bit about how things have changed in his lifetime.
 - Payload: Action to be performed when control is obtained. Typtically contains shell code.
 - Shell Code: Usually assembly code to execute a shell (e.g. /bin/sh).  
 
-#### WinDBG Introductions  
-#### HERE
-#### HERE
-#### HERE 
-#### HERE
-
- WinDBG was introduced during the first lecture as well as a walkthrough challenge with posted solutions in which we had to attach WinDBG to a running internet explorer process. We were introduced to the following commands in WinDBG:
+#### WinDBG Introductions 
+WinDBG was introduced during the first lecture as well as a walkthrough challenge with posted solutions in which we had to attach WinDBG to a running internet explorer process. We were introduced to the following commands in WinDBG:
  
  - Viewing Memory: dd, da, du
 - Breakpoints: bp <addr>
@@ -253,6 +248,13 @@ Extensions:
 - Process (inc heap): !peb
 - Thread (inc stack): !teb
 - What Addr?: !address 
+ 
+#### HERE
+#### HERE
+#### HERE 
+#### HERE
+
+
  
  #### Flaw Classes and Vulnerabilities Examples  
  
