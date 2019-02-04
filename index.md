@@ -231,6 +231,7 @@ Brad went on to talk a little bit about how things have changed in his lifetime.
 - Vulnerability Trigger: Invokes the software bug to obtain control of the program.
 - Payload: Action to be performed when control is obtained. Typtically contains shell code.
 - Shell Code: Usually assembly code to execute a shell (e.g. /bin/sh).
+
 #### WinDBG Introductions
 
 WinDBG was introduced during the first lecture as well as a walkthrough challenge with posted solutions in which we had to attach WinDBG to a running internet explorer process. We were introduced to the following commands in WinDBG:
