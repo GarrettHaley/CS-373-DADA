@@ -269,7 +269,7 @@ The second lecture focused on performing a heap overflow. A heap overflow is a t
 
 #### Conclusions
  
-Overall, I enjoyed the material this week. The heap and stack overflow attacks were mostly review for me from CS 519. The tools and some of the vocabulary (ex: crash triage) were new to me. Last summer I had the opportunity to do some penetration testing during an internship. I thought this information was pretty valuable, and directly related to what I will be doing directly after graduation.
+Overall, I enjoyed the material this week. The heap and stack overflow attacks were mostly review for me from CS 519. The tools and some of the vocabulary (ex: crash triage) were new to me. Last summer I had the opportunity to do some penetration testing during an internship. I thought this information was pretty valuable, and directly related to what I will be doing after graduation.
  
  
   
