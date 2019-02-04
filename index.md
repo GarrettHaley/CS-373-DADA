@@ -251,7 +251,7 @@ Extensions:
  
 #### Flaw Classes and Vulnerabilities Examples
 
- Configuration flaw: A service or system which was set up incorrectly. Eg: A weak password.  
+ Configuration flaw: A service or system which was set up incorrectly. Eg: A weak password.   
  Logic flaw: A service or system containing a design flaw. Eg: softAuthorization issues.  
  Storage flaw: A flaw in protecting system storage. Eg: Inadequate Encryption.  
  Input Validation: A system or service corruption due to a validation flaw. Eg: Memory corruption, injection. 
