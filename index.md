@@ -246,7 +246,7 @@ WinDBG was introduced during the first lecture as well as a walkthrough challeng
 Extensions:
 - Process (inc heap): !peb
 - Thread (inc stack): !teb
-- What Addr?: !address
+- What Addr?: !address  
  
  #### Flaw Classes and Vulnerabilities Examples
  
