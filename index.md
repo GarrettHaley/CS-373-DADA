@@ -234,6 +234,10 @@ Brad went on to talk a little bit about how things have changed in his lifetime.
 - Shell Code: Usually assembly code to execute a shell (e.g. /bin/sh).  
 
 #### WinDBG Introductions  
+#### HERE
+#### HERE
+#### HERE 
+#### HERE
 
  WinDBG was introduced during the first lecture as well as a walkthrough challenge with posted solutions in which we had to attach WinDBG to a running internet explorer process. We were introduced to the following commands in WinDBG:  
  
