@@ -250,7 +250,7 @@ Extensions:
 - Thread (inc stack): !teb
 - What Addr?: !address  
  
- #### WinDBG Introductions 
+ #### WinDBG Introductions   
  #### Flaw Classes and Vulnerabilities Examples  
  
  Configuration flaw: A weak password.  
