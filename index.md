@@ -226,13 +226,30 @@ This week began with Brad speaking generally about what software manipulation is
 Brad went on to talk a little bit about how things have changed in his lifetime. In the internets infancy stages, hacking usually took on less harmful dimensions than what we say today. Website defacement, denial of services attacks were the norm. As we have become more  reliant on the internet and our connected devices, a much higher level of threat sophistication and malice has increased. Brad briefly discussed cyber armies and bug bounty programs to further show how much money and energy is now spent in the cyber security domain.
 
 #### Defintions:  
+
 - Memory Corruption: Accessing memory in an invalid way which results in an undefined behavior.
 - Exploitation: Taking advantage of a vulnerability. This consists of a vulnerability trigger and payload.
 - Vulnerability Trigger: Invokes the software bug to obtain control of the program.
 - Payload: Action to be performed when control is obtained. Typtically contains shell code.
 - Shell Code: Usually assembly code to execute a shell (e.g. /bin/sh).  
 
+#### WinDBG Introductions  
 
+WinDBG was introduced during the first lecture as well as a walkthrough challenge with posted solutions in which we had to attach WinDBG to a running internet explorer process. We were introduced to the following commands in WinDBG:  
+
+- Viewing Memory: dd, da, du
+- Breakpoints: bp <addr>
+- Clear all: bc *
+- Stepping: t, p
+- Disassembly: View->Disass.
+- Conversion: .formats
+- Math: ?1+1
+- Modules: lm
+Extensions:
+- Process (inc heap): !peb
+- Thread (inc stack): !teb
+- What Addr?: !address  
+ 
  #### Flaw Classes and Vulnerabilities Examples  
  
  Configuration flaw: A weak password.  
