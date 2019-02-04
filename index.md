@@ -239,7 +239,20 @@ Brad went on to talk a little bit about how things have changed in his lifetime.
 #### HERE 
 #### HERE
 
- WinDBG was introduced during the first lecture as well as a walkthrough challenge with posted solutions in which we had to attach WinDBG to a running internet explorer process. We were introduced to the following commands in WinDBG:  
+ WinDBG was introduced during the first lecture as well as a walkthrough challenge with posted solutions in which we had to attach WinDBG to a running internet explorer process. We were introduced to the following commands in WinDBG:
+ 
+ - Viewing Memory: dd, da, du
+- Breakpoints: bp <addr>
+- Clear all: bc *
+- Stepping: t, p
+- Disassembly: View->Disass.
+- Conversion: .formats
+- Math: ?1+1
+- Modules: lm
+Extensions:
+- Process (inc heap): !peb
+- Thread (inc stack): !teb
+- What Addr?: !address 
  
  #### Flaw Classes and Vulnerabilities Examples  
  
