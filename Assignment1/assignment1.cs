@@ -47,7 +47,7 @@ namespace assignment1
             {
                 try{
                     ProcessModuleCollection currentProcessModules = process.Modules;
-                    Console.WriteLine("Process: {0} PID: {1}", process.ProcessName, process.Id);
+                    Console.WriteLine("Process: {0} ID: {1}", process.ProcessName, process.Id);
                 }
                 catch(Exception e){}                 
             }
@@ -92,9 +92,9 @@ namespace assignment1
                 IntPtr processHandle = new IntPtr(0);
                 const int PROCESS_WM_READ = 0x0010;
                 int bytesRead = 0;
-                byte[] buffer = new byte[24];
+                byte[] buffer = new byte[48];
 
-                Console.Write("Enter a valid process name: ");
+                Console.Write("Enter a VALID process name: ");
                 processName = Console.ReadLine();
 
                 try{
@@ -114,10 +114,9 @@ namespace assignment1
                     continue;
                 }
 
-                Console.Write("Enter a valid memory location in that process: ");
+                Console.Write("Enter a VALID memory location in that process: ");
                 try{
                     memoryAddress = Convert.ToInt64(Console.ReadLine(),16);
-                    Console.Write(Convert.ToString(memoryAddress));
                     ReadProcessMemory((int)processHandle, memoryAddress, buffer, buffer.Length, ref bytesRead);
                 }
 
