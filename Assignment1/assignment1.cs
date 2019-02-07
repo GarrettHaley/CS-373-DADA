@@ -14,26 +14,29 @@ namespace assignment1
     public static extern bool ReadProcessMemory(int hProcess, Int64 lpBaseAddress, byte[] lpBuffer, int dwSize, ref int lpNumberOfBytesRead);
 
     [DllImport("kernel32.dll")]
-    static extern int VirtualQueryEx(IntPtr hProcess, IntPtr lpAddress, out MEMORY_BASIC_INFORMATION lpBuffer, uint dwLength);
+    static extern int VirtualQueryEx(IntPtr hProcess, IntPtr lpAddress, out MEMORY_BASIC_INFORMATION64 lpBuffer, uint dwLength);
 
-    [StructLayout(LayoutKind.Sequential)]
-    public struct MEMORY_BASIC_INFORMATION
-    {
-    public IntPtr BaseAddress;
-    public IntPtr AllocationBase;
-    public uint AllocationProtect;
-    public IntPtr RegionSize;
-    public uint State;
-    public uint Protect;
-    public uint Type;
+    [StructLayout(LayoutKind.Sequential)] 
+    public struct MEMORY_BASIC_INFORMATION64 
+    { 
+        public ulong BaseAddress; 
+        public ulong AllocationBase; 
+        public int AllocationProtect; 
+        public int __alignment1; 
+        public ulong RegionSize; 
+        public int State; 
+        public int Protect; 
+        public int Type; 
+        public int __alignment2; 
     }
+    
 
         static void Main() 
         {
             Process[] processes = Process.GetProcesses();
             string menuResponse;
             while(true){
-                Console.WriteLine("Choose a number: Enumerate running processes(1), enumerate running threads(2), enumerate modules(3), enumerate pages(4), get memory from a process(5)");
+                Console.WriteLine("Choose a number: Enumerate running processes(1), enumerate running threads(2), enumerate modules(3), enumerate pages(4), get memory from a process(5), or quit(10)");
                 menuResponse = Console.ReadLine();
                 switch(menuResponse){
                     case "1":
@@ -46,10 +49,13 @@ namespace assignment1
                         EnumerateModules(processes);
                         break;
                     case "4":
-                        EnumerateMemoryPages();
+                        EnumerateMemoryPages(processes);
                         break;
                     case "5": 
                         GetBytesFromMemory();
+                        break;
+                    case "10":
+                        System.Environment.Exit(1);
                         break;
                     default:
                         Console.Write("Invalid response, try again.\n");
@@ -59,21 +65,28 @@ namespace assignment1
            
 
         }
-        static void EnumerateMemoryPages()
+        static void EnumerateMemoryPages(Process[] processes)
         {
-            long MaxAddress = 0x7fffffff;
-            long address = 0;
-        do
-        {
-            MEMORY_BASIC_INFORMATION m;
-            int result = VirtualQueryEx(System.Diagnostics.Process.GetCurrentProcess().Handle, (IntPtr)address, out m, (uint)Marshal.SizeOf(typeof(MEMORY_BASIC_INFORMATION)));
-            Console.WriteLine("{0}-{1} : {2} bytes result={3}", m.BaseAddress, (uint)m.BaseAddress + (uint)m.RegionSize - 1, m.RegionSize, result);
-            if (address == (long)m.BaseAddress + (long)m.RegionSize)
-                break;
-            address = (long)m.BaseAddress + (long)m.RegionSize;
-        } 
-        while (address <= MaxAddress);
+            foreach (Process process in processes)
+            {
+                try{
+                    IntPtr startOffset = process.MainModule.BaseAddress; 
+                    IntPtr endOffset = IntPtr.Add(startOffset ,process.MainModule.ModuleMemorySize);
+                    do
+                    {
+                        MEMORY_BASIC_INFORMATION64 m;
+                        int result = VirtualQueryEx(process.Handle, startOffset, out m, (uint)Marshal.SizeOf(typeof(MEMORY_BASIC_INFORMATION64)));
+                        Console.WriteLine("Process {0} page location: 0x{1:x}-0x{2:x} : {3} bytes result={4}", process.ProcessName, m.BaseAddress, (uint)m.BaseAddress + (uint)m.RegionSize - 1, m.RegionSize, result);
+                        if ((long)startOffset == (long)m.BaseAddress + (long)m.RegionSize)
+                            break;
+                        startOffset = new IntPtr((long)m.BaseAddress + (long)m.RegionSize);
+                    } 
+                    while ((long)startOffset <= (long)endOffset);
+                }
+                catch(Exception e){}
+            }
         }
+
         static void EnumerateProcesses(Process[] processes)
         {
             foreach (Process process in processes)
@@ -139,7 +152,7 @@ namespace assignment1
                     Console.Write("Invalid process name, try again? (yes or no): ");
                     tryAgain = Console.ReadLine().ToUpper();
                     if (tryAgain == "N" || tryAgain == "NO"){
-                        System.Environment.Exit(1);
+                        Main();
                     }
                 }
 
@@ -157,7 +170,7 @@ namespace assignment1
                     Console.Write("Invalid memory location, try again? (yes or no): ");
                     tryAgain = Console.ReadLine().ToUpper();
                     if (tryAgain == "N" || tryAgain == "NO"){
-                        System.Environment.Exit(1);
+                        Main();
                     }
                 }
 
@@ -165,14 +178,13 @@ namespace assignment1
                     continue;
                 }
 
-               // Console.WriteLine(Encoding.Unicode.GetString(buffer) + " (" + bytesRead.ToString() + "bytes)");
                Console.WriteLine(System.Text.Encoding.UTF8.GetString(buffer) + " (" + bytesRead.ToString() + "bytes)");
 
                 Console.Write("Would you like to get memory from another process? (yes or no) ");
                 tryAgain = Console.ReadLine().ToUpper();
                 if (tryAgain == "N" || tryAgain == "NO"){
-                    System.Environment.Exit(1);
-                    }   
+                    Main();
+                    }  
             }
 
 
