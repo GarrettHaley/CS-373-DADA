@@ -29,6 +29,7 @@ namespace assignment1
         public int Type; 
         public int __alignment2; 
     }
+
     
 
         static void Main() 
@@ -67,6 +68,10 @@ namespace assignment1
         }
         static void EnumerateMemoryPages(Process[] processes)
         {
+            const int PAGE_EXECUTE = 0x10;
+            const int PAGE_EXECUTE_READ = 0x20;
+            const int PAGE_EXECUTE_READWRITE = 0x40;
+            const int PAGE_EXECUTE_WRITECOPY = 0x80;
             foreach (Process process in processes)
             {
                 try{
@@ -76,7 +81,8 @@ namespace assignment1
                     {
                         MEMORY_BASIC_INFORMATION64 m;
                         int result = VirtualQueryEx(process.Handle, startOffset, out m, (uint)Marshal.SizeOf(typeof(MEMORY_BASIC_INFORMATION64)));
-                        Console.WriteLine("Process {0} page location: 0x{1:x}-0x{2:x} : {3} bytes result={4}", process.ProcessName, m.BaseAddress, (uint)m.BaseAddress + (uint)m.RegionSize - 1, m.RegionSize, result);
+                        if(m.AllocationProtect == PAGE_EXECUTE || m.AllocationProtect == PAGE_EXECUTE_READ || m.AllocationProtect == PAGE_EXECUTE_READWRITE || m.AllocationProtect == PAGE_EXECUTE_WRITECOPY)
+                            Console.WriteLine("Process {0} executable page location: 0x{1:x}-0x{2:x} : {3} bytes", process.ProcessName, m.BaseAddress, (uint)m.BaseAddress + (uint)m.RegionSize - 1, m.RegionSize);
                         if ((long)startOffset == (long)m.BaseAddress + (long)m.RegionSize)
                             break;
                         startOffset = new IntPtr((long)m.BaseAddress + (long)m.RegionSize);
