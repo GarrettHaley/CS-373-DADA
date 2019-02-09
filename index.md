@@ -275,13 +275,44 @@ Overall, I enjoyed the material this week. The heap and stack overflow attacks w
  
  This week's write up will focus on the lecture content created by Aditya Kapoor, a research architect at McAfee labs. This consisted of discussing
   
-#### Definitions:
-
-Rootkit: Malware that actively conceals its existence and actions from users and system processes.  
 
 #### Kernel and User Interaction
 
 The application layer (EXE/DLL files) interact with the windows API which interacts with user-mode drivers or the kernel mode. This kernel mode interaction takes place between user-mode drivers and other kernel-mode drivers or exported driver support routines. Once inside  kernel mode, the kernel-mode drivers, exported driver support routines (the operating system kernel), and file system drivers. From the exported driver support routines (the OS kernel) and other kernel-mode drivers can interact with the hardware abstraction layer, which can interact directly with the hardware. 
+
+#### How Kernel Memory Works
+
+Kernel memory is a "flat memory module" which does not contain any security seperation. Therefore, any kernel driver can access any part of the memory. This is composed of the windows kernel (named ntoskrnl.exe) and driver code. Kapoor mentions that many important structures are prime targets for stealth (ex: SSDT, IDT, IRP).
+
+#### Threads in Windows OS
+
+According to lecture, most applications today are multithreaded. The key threading components presented in lecture were the thread stack, thread context, thread environment block, thread scheduling, and thread object. The kernel object is a data structure defined by the OS to describe OS constructs like the thread. Thread context, stack, etc are all defined within the kernel object struct. The following command allows a thread object to be seen in Windbg: KD> dt_KTHREAD. The thread context stores all of the related register values of the thread. Each thread has its own stack. The user mode stack is used for threads function calls and local variables while the kernel stack is used during data transfer between the user to the kernel.
+
+#### System boot process in Windows
+
+The system boot process starts with pre-boot which powers on self test to diagnose memory and hardware components. This loads the bios that find the boot device and then loads and executes MBR. MBR Then find the active partition and loads the boot sector in memory to execute it. The boot selector then loads the NTLDR from disk which continues to loads the operating system. Ntoskrl.exe (the kernal) continues to initialize.
+
+#### Process Memory in Windows 
+
+Processes in windows are implemented as objects. Each executable process can contain more than one thread. A process has an object table that handles the other objects which are known to that process. Each process needs one thread to execute.
+
+#### Rootkit Techniques
+
+Inline hooks: HackerDefender, Zbot.  
+Import table hooks: Adcliker-BA, Qoolaid.  
+DKOM: TDSS.  
+Inline hook (Kernel): Apropos.  
+IRP hook: TDSS, ZeroAccess.  
+SSDT hook: Ntrootkit-K.  
+IDT hook: Apropos.  
+Sysenter hook: Spam-mailbot.c.  
+Filter driver: SearchNet, PigSearch.  
+MBR: Mebroot, TDSS.  
+
+
+
+
+
 
 
 
