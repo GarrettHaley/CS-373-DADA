@@ -273,7 +273,7 @@ Overall, I enjoyed the material this week. The heap and stack overflow attacks w
 
 ## Week 5 Write Up
  
- This week's write up will focus on the lecture content created by Aditya Kapoor, a research architect at McAfee labs. This consisted of discussing Windows internals and rootkits. Overall, I didn't really enjoy this week's lectures as much as past lectures. The material was good, but I was occasionally lost, and still do not fully understand everyting we went over. In this write up I will go over kernal/user interactions, how kernel memory works, how threads work, how the boot process works, rootkit techniques, and stealth malware trends.
+ This week's write up will focus on the lecture content created by Aditya Kapoor, a research architect at McAfee labs. This week lectures discussed Windows internals and rootkits. Overall, I didn't really enjoy this week's lectures as much as past lectures. The material was good, but I was occasionally lost, and still do not fully understand everyting we went over. In this write up I will go over kernal/user interactions, how kernel memory works, how threads work, how the boot process works, rootkit techniques, and stealth malware trends.
 
 #### Kernel and User Interaction
 
@@ -281,7 +281,7 @@ The application layer (EXE/DLL files) interact with the windows API which intera
 
 #### How Kernel Memory Works
 
-Kernel memory is a "flat memory module" which does not contain any security seperation. Therefore, any kernel driver can access any part of the memory. This is composed of the windows kernel (named ntoskrnl.exe) and driver code. Kapoor mentions that many important structures are prime targets for stealth (ex: SSDT, IDT, IRP).
+Kernel memory is a "flat memory module" which does not contain any security seperation. Therefore, any kernel driver can access any part of the memory. This is composed of the windows kernel (named ntoskrnl.exe) and driver code. Kapoor mentions that many important structures are prime targets for stealth (ex: SSDT, IDT, IRP). 
 
 #### Threads in Windows OS
 
@@ -289,7 +289,7 @@ According to lecture, most applications today are multithreaded. The key threadi
 
 #### System boot process in Windows
 
-The system boot process starts with pre-boot which powers on self test to diagnose memory and hardware components. This loads the bios that find the boot device and then loads and executes MBR. MBR Then find the active partition and loads the boot sector in memory to execute it. The boot selector then loads the NTLDR from disk which continues to loads the operating system. Ntoskrl.exe (the kernal) continues to initialize.
+The system boot process starts with pre-boot which powers on self test to diagnose memory and hardware components. This loads the bios which finds the boot device and then loads and executes MBR. MBR Then finds the active partition and loads the boot sector in memory to execute it. The boot selector then loads the NTLDR from disk which continues to loads the operating system. Ntoskrl.exe (the kernal) continues to initialize through this process.
 
 #### Process Memory in Windows 
 
@@ -312,11 +312,17 @@ MBR: Mebroot, TDSS.
 
 - File forging: Overwrites existing files and create the view in a way that AV gets the clean view instead of the malicious one.  
 - Self Protection: Defend components and/or attack security components.    
-- Untrusting the trusted: Threats establish trust on the essential drivers for the system and everything else could be locked out. The AV would now have to find ways to get trusted by malware to get a chance to even load.    
-- Removing dependencies on files: Scanners based on direct file-system parsers work well so there is no file in the FS which helps rootkits move malicious code to boot process, move malicious code to the bios, or move encrypted malicious code to raw sectors or as afile.  
-- Disassociating memory from file-on-disk: This stems from the difficulty of tracking kernel memory. The rootkits memory can give-away its associated file on disk.
+- Untrusting the Trusted: Threats establish trust on the essential drivers for the system and everything else could be locked out. The AV would now have to find ways to get trusted by malware to get a chance to even load.    
+- Removing Dependencies on Files: Scanners based on direct file-system parsers work well so there is no file in the FS which helps rootkits move malicious code to boot process, move malicious code to the bios, or move encrypted malicious code to raw sectors or as a file.  
+- Disassociating Memory from File-on-disk: This stems from the difficulty of tracking kernel memory. The rootkits memory can give-away its associated file on disk.
 
+ #### Lab Work
+ 
+ For lab one I examined the Agony rootkit. After running it with Cuckoo, I searched for a .sys file in the analyzer directory and a wininit.sys file showed up. Tuluka showed suspicious API calls which reference this wininit.sys. Using LivedKD, I was able to identify the instructions for NTEnumerateValueKey. For lab two I examined a process before and after the zbot malware was run. The RWX can be seen for the process after the malware was run which is an idicator that the process was indeed infected by the zbot malware. In lab three we again worked with agony. Using WinDBG, I was able to find the offsets of the modified address for the API calls. I then traced the call to the original API address. The NtEnumerateValueKey had an offset of 84,the NtQueryDirectoryFile had an offset of 54, and NtQuerySystemInformation had an offset of 26.
 
+#### Conclusions
+
+Overall, this week was good. I learned some important things about kernal/user interactions, how kernel memory works, how threads work, how the boot process works, rootkit techniques, and stealth malware trends. I also had the opportunity to do some hands on work in the labs. This topic is not necessarily as interesting as digital forensics or penetration testing to me, but I can definitely say that this knowledge is invaluable to both topics. I did feel the most lost this week, but hopefully will learn more next quarter in CS 444 (Operating Systems II) which will help me to assimilate some of the information presented this week.
 
 
 
