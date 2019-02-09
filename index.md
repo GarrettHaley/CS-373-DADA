@@ -273,8 +273,7 @@ Overall, I enjoyed the material this week. The heap and stack overflow attacks w
 
 ## Week 5 Write Up
  
- This week's write up will focus on the lecture content created by Aditya Kapoor, a research architect at McAfee labs. This consisted of discussing
-  
+ This week's write up will focus on the lecture content created by Aditya Kapoor, a research architect at McAfee labs. This consisted of discussing Windows internals and rootkits. Overall, I didn't really enjoy this week's lectures as much as past lectures. The material was good, but I was occasionally lost, and still do not fully understand everyting we went over. In this write up I will go over kernal/user interactions, how kernel memory works, how threads work, how the boot process works, rootkit techniques, and stealth malware trends.
 
 #### Kernel and User Interaction
 
