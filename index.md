@@ -273,8 +273,19 @@ Overall, I enjoyed the material this week. The heap and stack overflow attacks w
 
 ## Week 5 Write Up
  
- 
+ This week's write up will focus on the lecture content created by Aditya Kapoor, a research architect at McAfee labs. This consisted of discussing
   
+#### Definitions:
+
+Rootkit: Malware that actively conceals its existence and actions from users and system processes.  
+
+#### Kernel and User Interaction
+
+The application layer (EXE/DLL files) interact with the windows API which interacts with user-mode drivers or the kernel mode. This kernel mode interaction takes place between user-mode drivers and other kernel-mode drivers or exported driver support routines. Once inside  kernel mode, the kernel-mode drivers, exported driver support routines (the operating system kernel), and file system drivers. From the exported driver support routines (the OS kernel) and other kernel-mode drivers can interact with the hardware abstraction layer, which can interact directly with the hardware. 
+
+
+
+
 
 
 
