@@ -309,6 +309,17 @@ Sysenter hook: Spam-mailbot.c.
 Filter driver: SearchNet, PigSearch.  
 MBR: Mebroot, TDSS.  
 
+#### Stealth Malware Trends
+
+- File forging: Overwrites existing files and create the view in a way that AV gets the clean view instead of the malicious one.  
+- Self Protection: Defend components and/or attack security components.    
+- Untrusting the trusted: Threats establish trust on the essential drivers for the system and everything else could be locked out. The AV would now have to find ways to get trusted by malware to get a chance to even load.    
+- Removing dependencies on files: Scanners based on direct file-system parsers work well so there is no file in the FS which helps rootkits move malicious code to boot process, move malicious code to the bios, or move encrypted malicious code to raw sectors or as afile.  
+- Disassociating memory from file-on-disk: This stems from the difficulty of tracking kernel memory. The rootkits memory can give-away its associated file on disk.
+
+
+
+
 
 
 
