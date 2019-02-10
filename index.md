@@ -322,7 +322,7 @@ MBR: Mebroot, TDSS.
 
 #### Conclusions
 
-Overall, this week was good. I learned some important things about kernal/user interactions, how kernel memory works, how threads work, how the boot process works, rootkit techniques, and stealth malware trends. I also had the opportunity to do some hands on work in the labs. This topic is not necessarily as interesting as digital forensics or penetration testing to me, but I can definitely say that this knowledge is invaluable to both topics. I did feel the most lost this week, but hopefully will learn more next quarter in CS 444 (Operating Systems II) which will help me to assimilate some of the information presented this week.
+Overall, this week was good. I learned some important things about kernal/user interactions, how kernel memory works, how threads work, how the boot process works, rootkit techniques, and stealth malware trends. I also had the opportunity to do some hands on work in the labs. This topic is not necessarily as interesting as digital forensics or penetration testing to me, but I can definitely say that this knowledge is invaluable to both topics. I did feel the most lost this week, but hopefully I will learn more next quarter in CS 444 (Operating Systems II) which will help me to assimilate some of the information presented this week.
 
 
 
