@@ -318,7 +318,7 @@ MBR: Mebroot, TDSS.
 
  #### Lab Work
  
- For lab one I examined the Agony rootkit. After running it with Cuckoo, I searched for a .sys file in the analyzer directory and a wininit.sys file showed up. Tuluka showed suspicious API calls which reference this wininit.sys. Using another tool I was able to identify the instructions for NTEnumerateValueKey. For lab two I examined a process before and after the zbot malware was run. The RWX can be seen for the process after the malware was run which is an idicator that the process was indeed infected by the zbot malware. In lab three we again worked with agony. Using WinDBG, I was able to find the offsets of the modified address for the API calls. I then traced the call to the original API address. The NtEnumerateValueKey had an offset of 84,the NtQueryDirectoryFile had an offset of 54, and NtQuerySystemInformation had an offset of 26.
+ For lab one I examined the Agony rootkit. After running it with Cuckoo, I searched for a .sys file in the analyzer directory and a wininit.sys file showed up. Tuluka showed suspicious API calls which reference this wininit.sys. Using another tool I was able to identify the instructions for NTEnumerateValueKey. For lab two I examined a process before and after the zbot malware was run. The RWX can be seen for the process after the malware was run which is an idicator that the process was indeed infected by the zbot malware. In lab three I again worked with agony. Using WinDBG, I was able to find the offsets of the modified address for the API calls. I then traced the call to the original API address. The NtEnumerateValueKey had an offset of 84,the NtQueryDirectoryFile had an offset of 54, and NtQuerySystemInformation had an offset of 26.
 
 #### Conclusions
 
