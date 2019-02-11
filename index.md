@@ -283,7 +283,7 @@ The application layer (EXE/DLL files) interact with the windows API which intera
 
 Kernel memory is a "flat memory module" which does not contain any security seperation. Therefore, any kernel driver can access any part of the memory. This is composed of the windows kernel (named ntoskrnl.exe) and driver code. Kapoor mentions that many important structures are prime targets for stealth (ex: SSDT, IDT, IRP). 
 
-#### Threads in Windows OS
+#### Threads in Windows 
 
 According to lecture, most applications today are multithreaded. The key threading components presented in lecture were the thread stack, thread context, thread environment block, thread scheduling, and thread object. The kernel object is a data structure defined by the OS to describe OS constructs like the thread. Thread context, stack, etc are all defined within the kernel object struct. The following command allows a thread object to be seen in Windbg: KD> dt_KTHREAD. The thread context stores all of the related register values of the thread. Each thread has its own stack. The user mode stack is used for threads function calls and local variables while the kernel stack is used during data transfer between the user to the kernel.
 
