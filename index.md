@@ -324,12 +324,16 @@ MBR: Mebroot, TDSS.
 
 Overall, this week was good. I learned some important things about kernal/user interactions, how kernel memory works, how threads work, how the boot process works, rootkit techniques, and stealth malware trends. I also had the opportunity to do some hands on work in the labs. This topic is not necessarily as interesting as digital forensics or penetration testing to me, but I can definitely say that this knowledge is invaluable to both topics. I did feel the most lost this week, but hopefully I will learn more next quarter in CS 444 (Operating Systems II) which will help me to assimilate some of the information presented this week.
 
+## Week 6 Write Up
+
+This week's write up will focus on the lecture content created by Ram Venugopalan and Geoffrey Cooper from the Intel security group. The material had prereading involving IP/UDP/TCP/TLS to a basic understand of the protocol function and protocol header formats, and the function of the protocol and the handshake in TLS.
+
+##### Network Security is Needed Because...
+
+From lecture, the fundamental reasons for network security are to keep dangerous hosts/data out to create a "safe space", prevent critical data exfiltration, network resources theft, critical infrastructure destruction, and espionage. Network security can protect hosts with missing internal protections, and find threats out on the network (attacks from the network). Some such attacks would be a distributed denial of service attack (DDoS), stack overflow, worms, and botnets.
 
 
-
-
-
-
+<img src="robustness_principle.PNG" alt="hi51" class="inline"/>
 
 
 
