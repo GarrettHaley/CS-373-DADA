@@ -336,7 +336,7 @@ From lecture, the fundamental reasons for network security are to keep dangerous
 #### Robustness Principle Analysis
 <img src="robustness_principle.PNG" alt="hi51" class="inline"/>
 
-### Network Protection Strategies
+#### Network Protection Strategies
 #### Positive policy 
 
 Defining what is expected to happen in the host. Anything else is not permitted. This gives defenders the advantage of using internal choices which the adversary would have to guess, limits the attack surface, and provides a hook for other trust mechanisms like trust chaining. Using a policy driven domain instead of threat domain allows for finite enumeration. The drawback to policy is it may detect a threat, but it cannot name the threat specifically.  
@@ -359,7 +359,63 @@ In the case of an attacker who does not known the proper structure of the networ
 This concept commonly deployed on network entry places hosts that misbehave via policy violations, IPS signatures, or by reputation into a quarantine where they cannot infect other hosts. This can be seen implemented in firewalls as a "blacklisting" mechanism, in airport wireless logins, and software defined netowkrs (SDN's).  
 
 #### Reputation
-This is a big data solution which collects a list of good and bad things and serves a list of them from the cloud. This could include IP addresses associated with malware/botnets/spammers, URL's that reference pages with scripting attacks, files from known program releases, files that come from known viruses, and many more. This protection mechanism is susceptable to zero day exploits, stale data, and hosts which are multi-functional.  
+This is a big data solution which collects a list of good and bad things and serves a list of them from the cloud. This could include IP addresses associated with malware/botnets/spammers, URL's that reference pages with scripting attacks, files from known program releases, files that come from known viruses, and many more. This protection mechanism is susceptable to zero day exploits, stale data, and hosts which are multi-functional. 
+
+#### Man in the Middle Attack
+
+Man in the middle attacks happen when one node wants to send data to another node and the data is intercepted by a third party and stands between the data between both sources reading and potentially changing the data. This can be done through ARP poisoning where a node floods the network with ARP responses to fool hosts into thinking it is the default gateway, or TCP hijacking which is when an adversary injects, deletes, or changes data into a TCP stream and fixes up packets so no one notices. This can be solved by picking a shared secret and adding a SHA-256 of each message with the secret, or chain packets using sequence numbers, or just chain the hashes.
+
+#### Covert Channels
+
+Covert channels are channels to transmit information hidden from traditional network control devices and typically have very low bandwidth. Some examples are TCP ISN's, Ack Sequence #, IP ID, and TCP reXmit patterns.
+
+#### Reconnaissance
+
+Active: Adversary wants to attack vulnerable machines on a network. This is to find addresses for services that can be attacked.  
+Passive: Adversary is able to see data on the network. This is for the adversary to learn more about people.  
+
+#### Defending Against Reconnaissance
+
+It is difficult to defend against passive reconnaissance except using physical security or cyptography. Active reconnaissance can be defended against by policy and deep inspection, honeynets, log-correlation, SIEM, IPS, and firewall implementations.
+
+#### Spoofing
+
+Spoofing is when an adversary masquerades as another network entity to gain some advantage over the target. TCP sequence numbers, IP addresses, MAC addresses, email addresses, and HTTP fields can all be spoofed.
+
+#### Defending Against Spoofing
+
+Reverse path filtering, ingress filtering dropping packets from routes that should never appear in the Internet routing table, and egress filtering which insures only packets that belong to appropriate internal networks get routed.
+
+#### Denial of Service (DoS)/Distributed Denial of Service (DDoS)
+
+DoS: Involves an adversary consuming resources for an extended period of time such that the targeted service is degraded, some times to a point where it is unusable.  
+DDoS = Performs asymmetrical resource utilization which is the key to the success of most DoS attacks. A DDoS attack leverages large numbers of computers to perform resource exhaustion attacks against a target such that it is overwhelmed and unable to perform its function.
+
+#### Defending Against Denial of Service (DoS)/Distributed Denial of Service (DDoS)
+
+Defending against DoS/DDos involves network traffic validation and cleansing by network products. Firewall proxies can validate application protocols to prevent protocol vulnerabilities from exploitation. Ensuring that popular attacks such as SYN Floods, LAND attacks are properly defended against, and traffic scrubbing sensors will help greatly. 
+
+
+#### Backdoors
+
+Backdoors are intentional threats used to compromise devices (bugs are unintentional).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
