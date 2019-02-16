@@ -326,7 +326,8 @@ Overall, this week was good. I learned some important things about kernal/user i
 
 ## Week 6 Write Up
 
-This week's write up will focus on the lecture content created by Ram Venugopalan and Geoffrey Cooper from the Intel security group. The material had prereading involving IP/UDP/TCP/TLS to a basic understand of the protocol function and protocol header formats, and the function of the protocol and the handshake in TLS. We then went over the Robustness Princple manifesto created by Jonathan Postel which greatly impacted the philosophy behind networking design for the past 30 years.
+This week's write up will focus on the lecture content created by Ram Venugopalan and Geoffrey Cooper from the Intel security group. The material had prereading involving IP/UDP/TCP/TLS to a basic understand of the protocol function and protocol header formats, and the function of the protocol and the handshake in TLS. We began the material discussing the Robustness Princple manifesto created by Jonathan Postel which greatly impacted the philosophy behind networking design for the past 30 years. We then dove into network protection strategies including positive policy, firewalls / security zones, defense in depth, intrusion detection, honeynets/intrusion deception, quarantine, and reputation.
+
 
 ##### Network Security is Needed Because...
 
@@ -334,6 +335,21 @@ From lecture, the fundamental reasons for network security are to keep dangerous
 
 ##### Robustness Principle Analysis
 <img src="robustness_principle.PNG" alt="hi51" class="inline"/>
+
+##### Network Protection Strategies
+Positive policy: Defining what is expected to happen in the host. Anything else is not permitted. This gives defenders the advantage of using internal choices which the adversary would have to guess, limits the attack surface, and provides a hook for other trust mechanisms like trust chaining. Using a policy driven domain instead of threat domain allows for finite enumeration. The drawback to policy is it may detect a threat, but it cannot name the threat specifically.  
+
+Firewalls / Security Zones: The most common implementation of policy is defining zones in the network with policy between the zones. The software which sits between sectored zones and filter traffic based on set policies is called a firewall. The commonly used zones are internet (Intranet), extranet (corporate), DMZ (user stations). These are best used for describing peer to peer IP policies.  
+
+Defense in Depth: Simply having layered defenses to improve the overall security posture of the system.  
+Intrusion Detection: Detects attacks by using signatures and anomly detection. Its advantages are that it can catch known attacks quickly and provide good information on attacks. Its disadvantages are zero day attacks (unknown attacks), and that it can generate false positivies.  
+
+Honeynets / Intrusion Deception: In the case of an attacker who does not known the proper structure of the network, a phony network can be devised to wate their time and deceive them. This involves applying sucker algorithms to slow down the attacker and fake data for them to look at. The issue with this is it takes a lot of configuration and is often seen less than firewalls and other modes of protection.  
+
+Quarantine: This concept commonly deployed on network entry places hosts that misbehave via policy violations, IPS signatures, or by reputation into a quarantine where they cannot infect other hosts. This can be seen implemented in firewalls as a "blacklisting" mechanism, in airport wireless logins, and software defined netowkrs (SDN's).  
+
+Reputation: This is a big data solution which collects a list of good and bad things and serves a list of them from the cloud. This could include IP addresses associated with malware/botnets/spammers, URL's that reference pages with scripting attacks, files from known program releases, files that come from known viruses, and many more. This protection mechanism is susceptable to zero day exploits, stale data, and hosts which are multi-functional.  
+
 
 
 
