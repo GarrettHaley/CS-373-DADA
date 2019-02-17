@@ -345,6 +345,11 @@ Defining what is expected to happen in the host. Anything else is not permitted.
 
 The most common implementation of policy is defining zones in the network with policy between the zones. The software which sits between sectored zones and filter traffic based on set policies is called a firewall. The commonly used zones are internet (Intranet), extranet (corporate), DMZ (user stations). These are best used for describing peer to peer IP policies.  
 
+#### Firewall Exercise
+
+<img src="week6_policy1.PNG" alt="hi51" class="inline"/>
+<img src="week6_policy2.PNG" alt="hi51" class="inline"/>
+
 #### Defense in Depth
 
 Simply having layered defenses to improve the overall security posture of the system.  
