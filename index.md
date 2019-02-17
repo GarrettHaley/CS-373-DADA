@@ -326,20 +326,20 @@ Overall, this week was good. I learned some important things about kernal/user i
 
 ## Week 6 Write Up
 
-This week's write up will focus on the lecture content created by Ram Venugopalan and Geoffrey Cooper from the Intel security group. The material had prereading involving IP/UDP/TCP/TLS to a basic understand of the protocol function and protocol header formats, and the function of the protocol and the handshake in TLS. We began the material discussing the Robustness Princple manifesto created by Jonathan Postel which greatly impacted the philosophy behind networking design for the past 30 years. We then dove into network protection strategies including positive policy, firewalls / security zones, defense in depth, intrusion detection, honeynets/intrusion deception, quarantine, reputation. Lastely we covered a hodgepodge of network security related topics including man in the middle attacks, covert channels, reconnaissance, spoofing, denial of service/distributed denial of service attacks, backdoors, network address translation, IpSec, advanced evasion techniques, and switch operations. I found this material to be pretty intersting and much easier to follow than last weeks lectures.
+This week's write up will focus on the lecture content created by Ram Venugopalan and Geoffrey Cooper from the Intel security group. The material had prereading involving IP/UDP/TCP/TLS. This reading was to gain a basic understanding of the protocol functionality and protocol header formats, and the functionality of the protocol and the handshake in TLS. We began this weeks material discussing the Robustness Princple manifesto created by Jonathan Postel which has greatly impacted the philosophy behind networking design for the past 30 years. We then dove into network protection strategies including positive policy, firewalls/security zones, defense in depth, intrusion detection, honeynets/intrusion deception, quarantine, and reputation. Lastely we covered a hodgepodge of network security related topics including man in the middle attacks, covert channels, reconnaissance, spoofing, denial of service/distributed denial of service attacks, backdoors, network address translation, IpSec, advanced evasion techniques, and switch operations. I found this weeks material to be pretty intersting, and much easier to follow than last weeks lectures.
 
 
 #### Network Security is Needed Because...
 
-From lecture, the fundamental reasons for network security are to keep dangerous hosts/data out to create a "safe space", prevent critical data exfiltration, network resources theft, critical infrastructure destruction, and espionage. Network security can protect hosts with missing internal protections, and find threats out on the network (attacks from the network). Some such attacks would be a distributed denial of service attack (DDoS), stack overflow, worms, and botnets.
+From lecture, the fundamental reasons for network security are to keep dangerous hosts/data out to create a "safe space", prevent critical data exfiltration, network resources theft, critical infrastructure destruction, and espionage. Network security can protect hosts with missing internal protections, and find threats out on the network (attacks from in the network). Some such attacks would be a distributed denial of service attack (DDoS), stack overflow, worms, and botnets.
 
 #### Robustness Principle Analysis
 <img src="robustness_principle.PNG" alt="hi51" class="inline"/>
 
 #### Network Protection Strategies
-#### Positive policy 
+#### Positive Policy 
 
-Defining what is expected to happen in the host. Anything else is not permitted. This gives defenders the advantage of using internal choices which the adversary would have to guess, limits the attack surface, and provides a hook for other trust mechanisms like trust chaining. Using a policy driven domain instead of threat domain allows for finite enumeration. The drawback to policy is it may detect a threat, but it cannot name the threat specifically.  
+Positive policy defines what is expected to happen in the host. Anything else is not permitted. This gives defenders the advantage of using internal choices which the adversary would have to guess, limits the attack surface, and provides a hook for other trust mechanisms like trust chaining. Using a policy driven domain instead of a threat domain allows for finite enumeration. The drawback to policy is it may be able to detect a threat, but it may not be able to name the threat specifically.  
 
 #### Firewalls / Security Zones
 
@@ -353,26 +353,30 @@ The most common implementation of policy is defining zones in the network with p
 #### Defense in Depth
 
 Simply having layered defenses to improve the overall security posture of the system.  
-Intrusion Detection: Detects attacks by using signatures and anomly detection. Its advantages are that it can catch known attacks quickly and provide good information on attacks. Its disadvantages are zero day attacks (unknown attacks), and that it can generate false positivies.  
+
+#### Intrusion Detection
+
+Detects attacks by using signatures and anomly detection. Its advantages are that it can catch known attacks quickly and provide good information on attacks. Its disadvantages are zero day attacks (unknown attacks), and its generation of false positivies.  
 
 #### Honeynets / Intrusion Deception
 
-In the case of an attacker who does not known the proper structure of the network, a phony network can be devised to wate their time and deceive them. This involves applying sucker algorithms to slow down the attacker and fake data for them to look at. The issue with this is it takes a lot of configuration and is often seen less than firewalls and other modes of protection.  
+In the case of an adversary who does not know the proper structure of the network, a phony network can be devised to waste their time and deceive them. This involves applying "sucker algorithms" to slow down the attacker and fake data for them to look at. The issue with this is, it takes a lot of configuration and is often seen less than firewalls and other modes of protection.  
 
 #### Quarantine
 
-This concept commonly deployed on network entry places hosts that misbehave via policy violations, IPS signatures, or by reputation into a quarantine where they cannot infect other hosts. This can be seen implemented in firewalls as a "blacklisting" mechanism, in airport wireless logins, and software defined netowkrs (SDN's).  
+This concept is commonly deployed on network entry. It places hosts that misbehave via policy violations, IPS signatures, or by reputation into a quarantine where they cannot infect other hosts. This can be seen implemented in firewalls as a "blacklisting" mechanism, in airport wireless logins, and software defined netowkrs (SDN's).  
 
 #### Reputation
-This is a big data solution which collects a list of good and bad things and serves a list of them from the cloud. This could include IP addresses associated with malware/botnets/spammers, URL's that reference pages with scripting attacks, files from known program releases, files that come from known viruses, and many more. This protection mechanism is susceptable to zero day exploits, stale data, and hosts which are multi-functional. 
+
+This is a big data solution to network security which collects a list of good and bad things and serves a list of them from the cloud. This could include IP addresses associated with malware/botnets/spammers, URL's that reference pages with scripting attacks, files from known program releases, files that come from known viruses, and many more. This protection mechanism is still susceptable to zero day exploits, stale data, and hosts which are multi-functional. 
 
 #### Man in the Middle Attack
 
-Man in the middle attacks happen when one node wants to send data to another node and the data is intercepted by a third party and stands between the data between both sources reading and potentially changing the data. This can be done through ARP poisoning where a node floods the network with ARP responses to fool hosts into thinking it is the default gateway, or TCP hijacking which is when an adversary injects, deletes, or changes data into a TCP stream and fixes up packets so no one notices. This can be solved by picking a shared secret and adding a SHA-256 of each message with the secret, or chain packets using sequence numbers, or just chain the hashes.
+Man in the middle attacks happen when one node wants to send data to another node and the data is intercepted by a third party and stands between the data between both sources, reading and potentially changing the data. This can be done through ARP poisoning where a node floods the network with ARP responses to fool hosts into thinking it is the default gateway, or TCP hijacking which is when an adversary injects, deletes, or changes data into a TCP stream and fixes up packets so no one notices. This can be solved by the hosts picking a shared secret and adding a SHA-256 of each message with the secret, or chain packets using sequence numbers, or just chain the hashes.
 
 #### Covert Channels
 
-Covert channels are channels to transmit information hidden from traditional network control devices and typically have very low bandwidth. Some examples are TCP ISN's, Ack Sequence #, IP ID, and TCP reXmit patterns.
+Covert channels are channels to transmit information hidden from traditional network control devices which typically have very low bandwidth. Some examples are TCP ISN's, Ack Sequence #, IP ID, and TCP reXmit patterns.
 
 #### Reconnaissance
 
@@ -381,7 +385,7 @@ Passive: Adversary is able to see data on the network. This is for the adversary
 
 #### Defending Against Reconnaissance
 
-It is difficult to defend against passive reconnaissance except using physical security or cyptography. Active reconnaissance can be defended against by policy and deep inspection, honeynets, log-correlation, SIEM, IPS, and firewall implementations.
+It is difficult to defend against passive reconnaissance except using physical security or cyptography. Active reconnaissance can be defended against by policy/deep inspection, honeynets, log-correlation, SIEM, IPS, and firewall implementations.
 
 #### Spoofing
 
@@ -398,7 +402,7 @@ DDoS = Performs asymmetrical resource utilization which is the key to the succes
 
 #### Defending Against Denial of Service (DoS)/Distributed Denial of Service (DDoS)
 
-Defending against DoS/DDos involves network traffic validation and cleansing by network products. Firewall proxies can validate application protocols to prevent protocol vulnerabilities from exploitation. Ensuring that popular attacks such as SYN Floods, LAND attacks are properly defended against, and traffic scrubbing sensors will help greatly. 
+Defending against DoS/DDos involves network traffic validation and cleansing by network products. Firewall proxies can validate application protocols to prevent protocol vulnerabilities from exploitation. Ensuring that popular attacks such as SYN Floods, LAND attacks are properly defended against, and traffic scrubbing sensors can help greatly. 
 
 
 #### Backdoors
@@ -407,19 +411,19 @@ Backdoors are intentional threats used to compromise devices (bugs are unintenti
 
 #### Packet Filtering
 
-Packet filtering is a policy driven whitelisting method to allow only expected traffic thorough the network boundary. This is often the first step toward protecting the network. To filter packets, clear network boundaries and segementation are key to its success. This form of defense layer 3 and 4 properties (i.e, addresses and ports) to be controlled by policy. The drawbacks of packet filtering is it is unable to understand higher level applications/protocols and therefore cannot easily shield endpoints from application level attacks.
+Packet filtering is a policy driven whitelisting method to allow only expected traffic thorough the network boundary. This is often the first step toward protecting the network. To filter packets, clear network boundaries and segementation are key to its success. This form of defense uses layer 3 and 4 properties (i.e, addresses and ports) to mandate policy. The drawbacks of packet filtering is its inability to understand higher level applications/protocols. Therefore, it cannot easily shield endpoints from application level attacks.
 
 #### Network Address Translation (NAT)
 
-NAT temporarily maps a connection from a private LAN IP and port to a public IP address and port to be used on the public facing side. This makes it more difficult for attackers to learn the network architecture and aids in mitigating the low availability of IPv4 addresses.
+NAT temporarily maps a connection from a private LAN IP and port to a public IP address and port. This makes it more difficult for attackers to learn the network architecture, and aids in mitigating the low availability of IPv4 addresses.
 
 #### IPSec
 
-IPsec is a security at the IP layer which allows IP packets to be encrypted between two nodes. When a network is contructed of IPSec tunnels, it is called a Virtual Private Network (VPN). These are set up by a client using the Internet Key Exchange protocol (which uses a Diffie Hellman public key exchange). Authentication is performed by the shared secret between the client and another node. After the IKE echange, a Security Association is set up between two two nodes.
+IPsec is security at the IP layer which allows IP packets to be encrypted between two nodes. When a network is contructed of IPSec tunnels, it is called a Virtual Private Network (VPN). These are set up by a client using the Internet Key Exchange protocol (which uses a Diffie Hellman public key exchange). Authentication is performed by the shared secret between the client and another node. After the IKE echange, a Security Association (SA) is set up between two two nodes.
 
 #### Advanced Evasion Techniques
 
-Its been shown that even combining multiple evasion techniques at once will fail to notice simple attacks. Sometimes these can be limits in the code or a faliure to process packets the same way hosts do. AET demonstrates how new vulnerabilities can swiftly affect unpatched machines.
+Its been shown that even combining multiple evasion techniques at once can fail to notice simple attacks. Sometimes theis can be due to limits in the code, or a faliure to process packets the same way hosts do. AET demonstrates how new vulnerabilities can swiftly affect unpatched machines.
 
 #### How a Switch Works
 
