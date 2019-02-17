@@ -400,6 +400,32 @@ Defending against DoS/DDos involves network traffic validation and cleansing by 
 
 Backdoors are intentional threats used to compromise devices (bugs are unintentional).
 
+#### Packet Filtering
+
+Packet filtering is a policy driven whitelisting method to allow only expected traffic thorough the network boundary. This is often the first step toward protecting the network. To filter packets, clear network boundaries and segementation are key to its success. This form of defense layer 3 and 4 properties (i.e, addresses and ports) to be controlled by policy. The drawbacks of packet filtering is it is unable to understand higher level applications/protocols and therefore cannot easily shield endpoints from application level attacks.
+
+#### Network Address Translation (NAT)
+
+NAT temporarily maps a connection from a private LAN IP and port to a public IP address and port to be used on the public facing side. This makes it more difficult for attackers to learn the network architecture and aids in mitigating the low availability of IPv4 addresses.
+
+#### IPSec
+
+IPsec is a security at the IP layer which allows IP packets to be encrypted between two nodes. When a network is contructed of IPSec tunnels, it is called a Virtual Private Network (VPN). These are set up by a client using the Internet Key Exchange protocol (which uses a Diffie Hellman public key exchange). Authentication is performed by the shared secret between the client and another node. After the IKE echange, a Security Association is set up between two two nodes.
+
+#### Advanced Evasion Techniques
+
+Its been shown that even combining multiple evasion techniques at once will fail to notice simple attacks. Sometimes these can be limits in the code or a faliure to process packets the same way hosts do. AET demonstrates how new vulnerabilities can swiftly affect unpatched machines.
+
+#### How a Switch Works
+
+In normal switches, data is forwarded by the interface hardware based on flow tables and new data is processed by embedded control logic. In an openflow software defined network, existing data is processed by the switch, new data is processed by the openflow controller, and the openflow protocol is used to connect the two.
+
+
+
+
+
+
+
 
 
 
