@@ -326,7 +326,7 @@ Overall, this week was good. I learned some important things about kernal/user i
 
 ## Week 6 Write Up
 
-This week's write up will focus on the lecture content created by Ram Venugopalan and Geoffrey Cooper from the Intel security group. The material had prereading involving IP/UDP/TCP/TLS to a basic understand of the protocol function and protocol header formats, and the function of the protocol and the handshake in TLS. We began the material discussing the Robustness Princple manifesto created by Jonathan Postel which greatly impacted the philosophy behind networking design for the past 30 years. We then dove into network protection strategies including positive policy, firewalls / security zones, defense in depth, intrusion detection, honeynets/intrusion deception, quarantine, reputation. Lastely we covered a hodgepodge of network security related topics including man in the middle attacks, covert channels, reconnaissance, spoofing, denial of service/distributed denial of service attacks, backdoors, network address translation, IpSec, advanced evasion techniques, and switch operations.
+This week's write up will focus on the lecture content created by Ram Venugopalan and Geoffrey Cooper from the Intel security group. The material had prereading involving IP/UDP/TCP/TLS to a basic understand of the protocol function and protocol header formats, and the function of the protocol and the handshake in TLS. We began the material discussing the Robustness Princple manifesto created by Jonathan Postel which greatly impacted the philosophy behind networking design for the past 30 years. We then dove into network protection strategies including positive policy, firewalls / security zones, defense in depth, intrusion detection, honeynets/intrusion deception, quarantine, reputation. Lastely we covered a hodgepodge of network security related topics including man in the middle attacks, covert channels, reconnaissance, spoofing, denial of service/distributed denial of service attacks, backdoors, network address translation, IpSec, advanced evasion techniques, and switch operations. I found this material to be pretty intersting and much easier to follow than last weeks lectures.
 
 
 #### Network Security is Needed Because...
@@ -424,6 +424,12 @@ Its been shown that even combining multiple evasion techniques at once will fail
 #### How a Switch Works
 
 In normal switches, data is forwarded by the interface hardware based on flow tables and new data is processed by embedded control logic. In an openflow software defined network, existing data is processed by the switch, new data is processed by the openflow controller, and the openflow protocol is used to connect the two.
+
+#### Conclusion
+
+Overall, I thought this material was really great. I learned some important things about network protection strategies, network attack strategies, and network configuration. The firewall exercise was an excellent opportunity to look at how network protection strategies are implemented on a real network, and the lab was a great exercise in network analysis. I am content with what I have learned this week.
+
+ 
 
 
 
