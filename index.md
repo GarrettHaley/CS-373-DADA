@@ -348,7 +348,7 @@ The most common implementation of policy is defining zones in the network with p
 #### Firewall Exercise
 
 <img src="week6_policy1.PNG" alt="hi51" class="inline"/>
-<img src="week6_policy2.PNG" alt="hi51" class="inline"/>
+<img src="week6_policy2.png" alt="hi571" class="inline"/>
 
 #### Defense in Depth
 
