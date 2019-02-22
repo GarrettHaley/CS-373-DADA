@@ -433,6 +433,8 @@ In normal switches, data is forwarded by the interface hardware based on flow ta
 
 Overall, I thought this material was really great. I learned some important things about network protection strategies, network attack strategies, and network configuration. The firewall exercise was an excellent opportunity to look at how network protection strategies are implemented on a real network, and the lab was a great exercise in network analysis. I am content with what I have learned this week.
 
+## Week 7 Write Up (TBD)
+
  
 
 
