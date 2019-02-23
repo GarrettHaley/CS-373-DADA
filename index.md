@@ -433,7 +433,49 @@ In normal switches, data is forwarded by the interface hardware based on flow ta
 
 Overall, I thought this material was really great. I learned some important things about network protection strategies, network attack strategies, and network configuration. The firewall exercise was an excellent opportunity to look at how network protection strategies are implemented on a real network, and the lab was a great exercise in network analysis. I am content with what I have learned this week.
 
-## Week 7 Write Up (TBD)
+## Week 7 Write Up 
+
+This week's write up will focus on the lecture content created by Cedric Cochin from the Intel Security group at McAfee Labs. The topics included web-centric attack vectors, a primer on web user agents, experience with web research tools and attacks, server-side/client-side threat defense, computer crime law in Oregon, and an introduction to advanced research techniques. I found this week interesting. I am interested in network and web security, so the last two weeks have been the most interesting to me.
+
+#### Definitions:
+- Social engineering: In the context of information security, refers to psychological manipulation of people into performing actions or divulging confidential information. A type of confidence trick for the purpose of information gathering, fraud, or system access, it differs from a traditional "con" in that it is often one of many steps in a more complex fraud scheme.    
+- Phishing: The fraudulent practice of convincing individuals to act counter to what is beneficial for them through fake authority, blackmail or other forms of manipulation to gain data, access to a system/network, money or other forms of property.   
+- SEO Poisoning: Use trending information on the interent to lure victims to malicious content via redirection.  
+- Fake Updates: Malware which mimics well-known sofware to convince users with good intentions to do something harmul.  
+- Social media: Using social media authority to trick/redirect users to malicious activity.
+- Malvertising:
+
+
+
+#### Oregon Law: Computer Crime
+
+There are three main categories of computer crime:
+1. Knowingly accessing or using a computer/network for fraudulent purposes to obtain money, services, property, or proprietary information (or attempting to).    
+2. Knowingly altering, destorying, or damaging any computer, network, software, dada, etc (or attempting to).   
+3. Knowingly accessing computer or network without authorization (or attempting to).  
+- Category 1 and 2 offenses are charged as a class C felony, and the 3rd category is charged as a class A misdemeanor. Conviction could lead to as much as one year for a class A misdemeanor, and up to five years for a class C felony.  
+
+#### Historic Evolution of Web-Based Malware Delivery.
+
+Stone Age (1994-2000): Consisted of generic phishing attacks, popup-based redirection, and script bombing.  
+Bronze Age(2000-2005: Improved upon existing phishing attacks, cross-site scripting and browser exploit enter.  
+Iron Age (2005-2015): Improved upon browser exploitation, Spear phishing and plug-in exploits enter.  
+Today - Beyond (2015-): Improved upon spear phishing attacks, MitB and HTML5 attacks enter.  
+***95% of all malware are delivered via web attacks! ***
+
+#### Injection Points of Web-based Attacks
+
+Injection points include browser/extensions, the script engine, WinInet ETW/ETL, and the HTTP proxy network layers (i.e, HTTP, HTML, Javascript, and de-obfuscated content).
+
+#### User-level Attacks  
+
+According to the lecture, people are the weak link in a network. Hardening the current browser/OS will not be able help with this fundamental problem. Users are often exploited via social engineering (see definition above). Some common user traits often exploited include impulsiveness, laziness, arrogance, and an overly clickable nature. Attackers can direct users to malicious content through their own actions.
+
+
+
+
+
+
 
  
 
