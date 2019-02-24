@@ -452,6 +452,11 @@ This week's write up will focus on the lecture content created by Cedric Cochin 
 - SQL Injection: Attacker directly communicates GET/POST requests in a manner unintended by the creators to circumvent authentication/authorization or reveal private data.
 - Cross-Site-Scripting (XSS): Inject client-side script into other user’s browsers to bypass SOP rules to allow for script execution to perform malicious activity.
 - Cross-Site-Request-Forgery (CSRF): Exploit users trust in a trusted identity to trick the users browser into sending requests to the target site.
+- MAEC: Malware Attribute Enumeration and Characterization
+- Cybox: Cyber Observable eXpression
+- Stix: Structured Threat Information eXpression
+- CAPEC: Common Attack Pattern Enumeration and Classification
+
 
 #### Oregon Law: Computer Crime
 
@@ -500,7 +505,28 @@ In lecture the main security risks discussed were the following:
 #### Web Malware Tool-box
 1. Alexa: Tool which collects data through end-user toolbars which is useful in determining general site popularity and prevalence.  
 2. IPVoid: Tool which checks URL's a large list IP blacklists (35+ blacklists).  
-3. 
+3. CheckShortURL: URL Expander Service for most short URL services.
+4. Site Dossier: General Site information tool.
+5. Webutation: URL Reputation tool which utilizes Google Safebrowse, Norton Safeweb, WebAV, and Web of Trust.
+6. Web inspector: Web scanning tool which also provides a list of recently detected malicious sites.
+7. Virus Total: Online web scanning tool which also provides a list of malware files.
+8. Linux JWHOIS: Domain registration data client.
+9: Linux Dig: DNS resolver utility tool.
+10: PhantomJS: Headless, scriptable browser.
+11: Burp Suite: Graphical deconstruction tool.
+12: Web Scarab: Graphical deconstruction tool.
+13: Firebug: Multi-feature Firefox plugin.
+
+#### Host/Lexical Url Classification
+
+Host/lexical url classification is used to identify malicious url's based on human-authored rules, machine learning, or in a complementory method. This is to classify malicious content before its served. This is to protect against short-lived malware, auto-cloaking malware, single-shot malware, or when web crawling is computationally infeasible.
+
+#### Conclusion
+
+Another good week of material. Some of the material was repeated from past lectures, but it wasn't overly distracting. I was interested to learn about Oregons computer crime laws, injection points for web-based attacks, new and upcoming vulnerabilities due to HTML5, tools from the "web malware toolbox", and browser security features. I also enjoyed the "Host/Lexical URL Reputation Bake-off" assignment. I decided to use a machine learning algorithm (naive bayes) to classify malicious URL's. Overall, I am enjoying the topics and materials presented in this class.
+
+
+
 
 
 
