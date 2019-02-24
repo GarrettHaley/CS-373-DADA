@@ -443,9 +443,15 @@ This week's write up will focus on the lecture content created by Cedric Cochin 
 - SEO Poisoning: Use trending information on the interent to lure victims to malicious content via redirection.  
 - Fake Updates: Malware which mimics well-known sofware to convince users with good intentions to do something harmul.  
 - Social media: Using social media authority to trick/redirect users to malicious activity.
-- Malvertising:
-
-
+- Malvertising: Attacker using advertising networks as delivery mechanism for malware.
+- Waterhole attacks: Attacks target a common resource used by the individuals they wish to target as a delivery mechansim for malware.
+- Man-in-the-middle attacks: Interception and potential modification of traffic between nodes.
+- Man-in-the-browser attacks: Interception and modification of traffic to/from the server, but inside the browser.
+- DNS Spoofing: ISP DNS server returns malicious IP from a cache was poisoned by an attacker to redirect a user to the incorrect location.
+- Clickjacking: Tricking the user into clicking a pre-determined link in a rendered HTML page by hiding malicious content behind legitimate content.
+- SQL Injection: Attacker directly communicates GET/POST requests in a manner unintended by the creators to circumvent authentication/authorization or reveal private data.
+- Cross-Site-Scripting (XSS): Inject client-side script into other user’s browsers to bypass SOP rules to allow for script execution to perform malicious activity.
+- Cross-Site-Request-Forgery (CSRF): Exploit users trust in a trusted identity to trick the users browser into sending requests to the target site.
 
 #### Oregon Law: Computer Crime
 
@@ -469,7 +475,27 @@ Injection points include browser/extensions, the script engine, WinInet ETW/ETL,
 
 #### User-level Attacks  
 
-According to the lecture, people are the weak link in a network. Hardening the current browser/OS will not be able help with this fundamental problem. Users are often exploited via social engineering (see definition above). Some common user traits often exploited include impulsiveness, laziness, arrogance, and an overly clickable nature. Attackers can direct users to malicious content through their own actions.
+According to the lecture, people are the weak link in a network. Hardening the current browser/OS will not be able help with this fundamental problem. Users are often exploited via social engineering, SEO poisoning, fake updates, social media, malvertising, and waterhole attacks (see definitions above). Some common user traits often exploited include impulsiveness, laziness, arrogance, and an overly clickable nature. 
+
+#### Common Defenses to User-level Attacks
+
+Some fundamental defenses include URL/domain reputation systems, site certification services, client and gateway AV/AM, safe URL shorteners, content provider education, and end user education (this is the haredest one, coined "the human firewall" in lecture).
+
+#### Browser/Network Stack -level Attacks
+
+Attack surface includes Mitm, DNS hijacking, form manipulation, iframe injection, browser/script engine exploit (HTML5, DLL injection, man in the broser, XSS/XFS/CSRF/XSHM, page hijacking, clickjacking), or third party exploits (Java, Adobe Reader, Adobe Flash, QuickTime, etc). See definitions above.
+
+#### Modern Web Broswer Security Features
+
+Modern brosers use content security policy enforcement (CSPE), URL scheme access rules, OS isolation tehniques (i.e, sandboxing, etc), redirection restrictions, content sniffing, disruptive script handling, URL reputation client, and AV/AM content monitoring.
+
+#### New Security Risks of HTML5
+
+In lecture the main security risks discussed were the following:  
+1. New APIs potential lack of security could cause increased security defects in Apps and websites.  
+2. Apps provided outside of app store certification programs directly by vendors (malware finding its way into existing app stores).  
+3. Possibility of introduced exploits in the media stream due defects.  
+4. Increased sharing allowing possible misuse compromising security.  
 
 
 
