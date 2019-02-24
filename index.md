@@ -435,7 +435,7 @@ Overall, I thought this material was really great. I learned some important thin
 
 ## Week 7 Write Up 
 
-This week's write up will focus on the lecture content created by Cedric Cochin from the Intel Security group at McAfee Labs. The topics included web-centric attack vectors, a primer on web user agents, experience with web research tools and attacks, server-side/client-side threat defense, computer crime law in Oregon, and an introduction to advanced research techniques. I found this week interesting. I am interested in network and web security, so the last two weeks have been the most interesting to me.
+This week's write up will focus on the lecture content created by Cedric Cochin from the Intel Security group at McAfee Labs. The topics included web-centric attack vectors, a primer on web user agents, experience with web research tools and attacks, server-side/client-side threat defense, computer crime law in Oregon, and an introduction to advanced research techniques including URL classification. I found this week interesting. I am interested in network and web security, so the last two weeks have been the most interesting to me.
 
 #### Definitions:
 - Social engineering: In the context of information security, refers to psychological manipulation of people into performing actions or divulging confidential information. A type of confidence trick for the purpose of information gathering, fraud, or system access, it differs from a traditional "con" in that it is often one of many steps in a more complex fraud scheme.    
@@ -497,6 +497,10 @@ In lecture the main security risks discussed were the following:
 3. Possibility of introduced exploits in the media stream due defects.  
 4. Increased sharing allowing possible misuse compromising security.  
 
+#### Web Malware Tool-box
+1. Alexa: Tool which collects data through end-user toolbars which is useful in determining general site popularity and prevalence.  
+2. IPVoid: Tool which checks URL's a large list IP blacklists (35+ blacklists).  
+3. 
 
 
 
