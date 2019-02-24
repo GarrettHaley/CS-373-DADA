@@ -469,7 +469,7 @@ There are three main categories of computer crime:
 #### Historic Evolution of Web-Based Malware Delivery.
 
 Stone Age (1994-2000): Consisted of generic phishing attacks, popup-based redirection, and script bombing.  
-Bronze Age(2000-2005: Improved upon existing phishing attacks, cross-site scripting and browser exploit enter.  
+Bronze Age(2000-2005): Improved upon existing phishing attacks, cross-site scripting and browser exploits enter.  
 Iron Age (2005-2015): Improved upon browser exploitation, Spear phishing and plug-in exploits enter.  
 Today - Beyond (2015-): Improved upon spear phishing attacks, MitB and HTML5 attacks enter.  
 ***95% of all malware are delivered via web attacks! ***
@@ -523,7 +523,7 @@ Host/lexical url classification is used to identify malicious url's based on hum
 
 #### Conclusion
 
-Another good week of material. Some of the material was repeated from past lectures, but it wasn't overly distracting. I was interested to learn about Oregons computer crime laws, injection points for web-based attacks, new and upcoming vulnerabilities due to HTML5, tools from the "web malware toolbox", and browser security features. I also enjoyed the "Host/Lexical URL Reputation Bake-off" assignment. I decided to use a machine learning algorithm (naive bayes) to classify malicious URL's. Overall, I am enjoying the topics and materials presented in this class.
+Another good week of material. Some of the material was repeated from past lectures, but it wasn't overly distracting. It was interesting to learn about Oregons computer crime laws, injection points for web-based attacks, new and upcoming vulnerabilities due to HTML5, tools from the "web malware toolbox", and browser security features. I also enjoyed the "Host/Lexical URL Reputation Bake-off" assignment. I decided to use a machine learning algorithm (naive bayes) to classify malicious URL's. Overall, I am enjoying the topics and materials presented this week.
 
 
 
