@@ -525,6 +525,31 @@ Host/lexical url classification is used to identify malicious url's based on hum
 
 Another good week of material. Some of the material was repeated from past lectures, but it wasn't overly distracting. It was interesting to learn about Oregons computer crime laws, injection points for web-based attacks, new and upcoming vulnerabilities due to HTML5, tools from the "web malware toolbox", and browser security features. I also enjoyed the "Host/Lexical URL Reputation Bake-off" assignment. I decided to use a machine learning algorithm (naive bayes) to classify malicious URL's. Overall, I am enjoying the topics and materials presented this week.
 
+## Week 8 Write Up 
+
+This week's write up will focus on the lecture content regarding social engineering and introductory data manipulation (often in the form of phishing emails). created by Eric Peterson, a research manager from McAfee. The topics he covered included terminology, history, technology, tools, research, and techniques. I thought the lecturer was pretty good, but I am not very interested in FINISH
+
+#### Terminology Discussed in Lecture
+
+Spam/Ham: Ham is email that is not spam while spam is unsolicited email messages sent in bulk email (this is also known as "junk mail").  
+Spamtrap/Honeypot: A spamtrap is a honeypot used to collect spam. A honeypot is a mechanism set to draw in an adversary to detect, deflect or counteract attempts at unauthorized use of systems.    
+
+Botnet: A botnet is a number fo internet connected devices which have been infected by an adversary. The adversary can use these devices to perform distributed denial of service attacks (DDoS), steal user information, send span, and allow the attacker to access the devices, and potentially its connections.  
+
+Snowshoe Spam: Essentially, unsolicited bulk emailing which spreads across a large area briefly, and only once.  
+
+Phishing vs Spear Phishing: Phishing is the practice of sending emails claiming to be from reputable companies in order to induce individuals to reveal personal information, such as passwords and credit card numbers. Spear phishing is an email scam targeted towards a specific individual, organization or business.  
+
+Heuristics: A method to detect previously unknown computer viruses and new variants of viruses already in the "wild" used by many computer antivirus programs.  
+
+Bayesian: A method of statistical inference in which the Bayes theorem is used to update the probability for a hypothesis (great for predictive classification problems).  
+
+Fingerprinting/Hashing: From a security perspective, both fingerprinting and hashing can be used to aid in the identification process due to the difficulty of replicating or decoding the data.  
+
+
+
+  
+
 
 
 
