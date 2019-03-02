@@ -527,7 +527,7 @@ Another good week of material. Some of the material was repeated from past lectu
 
 ## Week 8 Write Up 
 
-This week's write up will focus on the lecture content regarding social engineering and introductory data manipulation (often in the form of phishing emails). created by Eric Peterson, a research manager from McAfee. The topics he covered included terminology, history, technology, tools, research, and techniques. I thought the lecturer was pretty good, but I am not very interested in FINISH
+This week's write up will focus on the lecture content regarding social engineering and introductory data manipulation (often in the form of phishing emails) created by Eric Peterson, a research manager from McAfee. The topics he covered included terminology, history, technology, tools, research, and techniques. I thought the lecturer was pretty good, but I am not very interested in FINISH
 
 #### Terminology Discussed in Lecture
 
