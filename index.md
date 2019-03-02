@@ -546,7 +546,11 @@ Bayesian: A method of statistical inference in which the Bayes theorem is used t
 
 Fingerprinting/Hashing: From a security perspective, both fingerprinting and hashing can be used to aid in the identification process due to the difficulty of replicating or decoding the data.  
 
+#### History
 
+During lecture we discussed some classical examples of phishing including "419 phishing", "Canadian pharmacy phishing", and the "Pump'n'Dump". A graph on botnet prevalence was shown of the last decade. There were large uptakes during 2010 then a drop from 2011 - 2013. Since 2013, there has been a positive increasing trend of botnets (becoming more prevalent again). 
+
+#### Technology
 
   
 
