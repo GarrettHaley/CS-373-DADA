@@ -552,6 +552,22 @@ During lecture we discussed some classical examples of phishing including "419 p
 
 #### Technology
 
+Spam engines can be reputation driven, IP driven, message driven, and/or URL driven. The engine may use varixed strings/variable strings (regular expression), message atrtribues, or a combination of both (meta rules).
+
+#### Tools
+
+- DIG - Domain information groper – investigation of DNS records.
+- WHOIS – Searching for IP/Domain registration information.
+- Grep/SED/AWK – data parsing and manipulation Open-source databases.
+- PostgreSQL – “The world's most advanced open source database” (according to lecture).
+- MySQL – “The world's most popular open source database" (according to lecture).
+- The Regex Coach: Regular Expression syntax/functionality learning aid.
+- Trustedsource.org: Historical & current reputations based on McAfee data.
+- Spamhaus.org: Accepted authoritative source of reputation data (Especially in NA)
+
+#### Research Techniques (TODO)
+
+
   
 
 
