@@ -563,7 +563,7 @@ Spam engines can be reputation driven, IP driven, message driven, and/or URL dri
 - MySQL – “The world's most popular open source database" (according to lecture).
 - The Regex Coach: Regular Expression syntax/functionality learning aid.
 - Trustedsource.org: Historical & current reputations based on McAfee data.
-- Spamhaus.org: Accepted authoritative source of reputation data (Especially in NA)
+- Spamhaus.org: Accepted authoritative source of reputation data.
 
 #### Research Techniques (TODO)
 
