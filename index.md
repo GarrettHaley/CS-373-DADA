@@ -531,7 +531,7 @@ This week's write up will focus on the lecture content regarding social engineer
 
 #### Terminology Discussed in Lecture
 
-Spam/Ham: Ham is email that is not spam while spam is unsolicited email messages sent in bulk email (this is also known as "junk mail").  
+Spam/Ham: Ham is email that is not spam while spam is unsolicited email messages sent in bulk email (this is also known as "junk mail").      
 Spamtrap/Honeypot: A spamtrap is a honeypot used to collect spam. A honeypot is a mechanism set to draw in an adversary to detect, deflect or counteract attempts at unauthorized use of systems.    
 
 Botnet: A botnet is a number fo internet connected devices which have been infected by an adversary. The adversary can use these devices to perform distributed denial of service attacks (DDoS), steal user information, send span, and allow the attacker to access the devices, and potentially its connections.  
@@ -564,6 +564,8 @@ Spam engines can be reputation driven, IP driven, message driven, and/or URL dri
 - The Regex Coach: Regular Expression syntax/functionality learning aid.
 - Trustedsource.org: Historical & current reputations based on McAfee data.
 - Spamhaus.org: Accepted authoritative source of reputation data.
+
+During the lab, the Regex coach was very useful but also a little bit difficult to learn. Regexes are developed similair to the Yara signatures we used in earlier labs (including this week to compare strings from incoming emails to seperate the ham from the spam. The emphasis to gaining accuracy was to improve the regexes because the different between 98% and 99% is very large when on a large scale (i.e, the internet). There were two primary methods mentioned for analyzing emails: probability scoring and additive scoring. Additive scoring is developing a point threshold for whether an email should be classified as spam and then adjust the points based on various factors disovered about the email. Probability scoring (what I used last week for my URL classifier) is idenitifying the programs confidence on whether something is spam based on various indentified parameters.
  
 #### Research Technique Considerations 
 
