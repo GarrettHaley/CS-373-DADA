@@ -556,19 +556,28 @@ Spam engines can be reputation driven, IP driven, message driven, and/or URL dri
 
 #### Tools
 
-- DIG - Domain information groper – investigation of DNS records.
-- WHOIS – Searching for IP/Domain registration information.
-- Grep/SED/AWK – data parsing and manipulation Open-source databases.
-- PostgreSQL – “The world's most advanced open source database” (according to lecture).
-- MySQL – “The world's most popular open source database" (according to lecture).
+- DIG: Domain information groper – investigation of DNS records.
+- WHOIS: Searching for IP/Domain registration information.
+- Grep/SED/AWK: data parsing and manipulation Open-source databases.
+- PostgreSQL: “The world's most advanced open source database” (according to lecture).
+- MySQL: “The world's most popular open source database" (according to lecture).
 - The Regex Coach: Regular Expression syntax/functionality learning aid.
 - Trustedsource.org: Historical & current reputations based on McAfee data.
 - Spamhaus.org: Accepted authoritative source of reputation data.
+ 
+#### Research Technique Considerations (
 
-#### Research Techniques (TODO)
+Research technique considerations include identifying how much user input is required, what quality assurances are expected, the value of human input vs automating it, resource cost, fault tolerance, probability scoring/additive scoring, and combination considerations of automation and human input. Below are some basic research techniques discussed in lecture:  
+Parsing: Extraction of key meta data.
+Grouping: Group data by timestamp from other common elements.  
+Aggregation: Values/time, Count distinct, etc (Exposure of relevant research paths).  
+Identifying outliers (example from lecture): When A, which is highly similar to B, is classified as spam but B is not.  
 
 
-  
+
+
+
+
 
 
 
