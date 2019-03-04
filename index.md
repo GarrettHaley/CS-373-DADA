@@ -531,7 +531,14 @@ This week's write up will focus on the lecture content regarding social engineer
 
 #### Terminology Discussed in Lecture
 
-Spam/Ham: Ham is email that is not spam while spam is unsolicited email messages sent in bulk email (this is also known as "junk mail").      
+Spam: Spam is unsolicited email messages sent in bulk email (this is also known as "junk mail"). Below is an example of spam from lecture:  
+
+<img src="spam.PNG" alt="hi51" class="inline"/>
+
+Ham: Ham is an email which is desired from the user and should not be classified as spam. Below is an example of ham from lecture:  
+
+<img src="ham.PNG" alt="hi51" class="inline"/>
+
 Spamtrap/Honeypot: A spamtrap is a honeypot used to collect spam. A honeypot is a mechanism set to draw in an adversary to detect, deflect or counteract attempts at unauthorized use of systems.    
 
 Botnet: A botnet is a number fo internet connected devices which have been infected by an adversary. The adversary can use these devices to perform distributed denial of service attacks (DDoS), steal user information, send span, and allow the attacker to access the devices, and potentially its connections.  
