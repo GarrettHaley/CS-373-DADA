@@ -527,21 +527,21 @@ Another good week of material. Some of the material was repeated from past lectu
 
 ## Week 8 Write Up 
 
-This week's write up will focus on the lecture content regarding social engineering and introductory data manipulation created by Eric Peterson, a research manager from McAfee. The topics he covered included terminology, history, technology, tools, research, and techniques. I thought the lecturer was pretty good, but I am not very interested in topics. The labs were somewhat interesting, but I found the interesting material very similair to previous weeks.
+This week's write up will focus on the lecture content regarding social engineering and introductory data manipulation created by Eric Peterson, a research manager from McAfee. The topics he covered included terminology, history, technology, tools, research, and techniques. I thought the lecturer was pretty good, but I am not very interested in phishing/social engineering attacks. The labs were somewhat interesting, but I found the interesting material somewhat repetitive of previous weeks.
 
 #### Terminology Discussed in Lecture
 
-Spam: Spam is unsolicited email messages sent in bulk email (this is also known as "junk mail"). Below is an example of spam from lecture:  
+Spam: Unsolicited email messages sent in bulk email (this is also known as "junk mail"). Below is an example of spam from lecture:  
 
 <img src="spam.PNG" alt="hi51" class="inline"/>
 
-Ham: Ham is an email which is desired from the user and should not be classified as spam. Below is an example of ham from lecture:  
+Ham: Email which is desired from the user and should not be classified as spam. Below is an example of ham from lecture:  
 
 <img src="ham.PNG" alt="hi51" class="inline"/>
 
-Spamtrap/Honeypot: A spamtrap is a honeypot used to collect spam. A honeypot is a mechanism set to draw in an adversary to detect, deflect or counteract attempts at unauthorized use of systems.    
+Spamtrap/Honeypot: A spamtrap is a honeypot used to collect spam. A honeypot is a mechanism set to draw in an adversary to detect, deflect or counteract attempts at unauthorized access.    
 
-Botnet: A botnet is a number fo internet connected devices which have been infected by an adversary. The adversary can use these devices to perform distributed denial of service attacks (DDoS), steal user information, send span, and allow the attacker to access the devices, and potentially its connections.  
+Botnet: A botnet is a number fo internet connected devices which have been infected by an adversary. The adversary can use these devices to perform distributed denial of service attacks (DDoS), steal user information, send spam, and allow the attacker to access the devices, and potentially its connections.  
 
 Snowshoe Spam: Essentially, unsolicited bulk emailing which spreads across a large area briefly, and only once.  
 
@@ -563,20 +563,20 @@ Spam engines can be reputation driven, IP driven, message driven, and/or URL dri
 
 #### Tools
 
-- DIG: Domain information groper – investigation of DNS records.
+- DIG: Domain information groper (investigation of DNS records).
 - WHOIS: Searching for IP/Domain registration information.
-- Grep/SED/AWK: data parsing and manipulation Open-source databases.
+- Grep/SED/AWK: data parsing and manipulation open-source databases.
 - PostgreSQL: “The world's most advanced open source database” (according to lecture).
 - MySQL: “The world's most popular open source database" (according to lecture).
 - The Regex Coach: Regular Expression syntax/functionality learning aid.
 - Trustedsource.org: Historical & current reputations based on McAfee data.
 - Spamhaus.org: Accepted authoritative source of reputation data.
 
-During the lab, the Regex coach was very useful but also a little bit difficult to learn. Regexes are developed similair to the Yara signatures we used in earlier labs (including this week to compare strings from incoming emails to seperate the ham from the spam. The emphasis to gaining accuracy was to improve the regexes because the different between 98% and 99% is very large when on a large scale (i.e, the internet). There were two primary methods mentioned for analyzing emails: probability scoring and additive scoring. Additive scoring is developing a point threshold for whether an email should be classified as spam and then adjust the points based on various factors disovered about the email. Probability scoring (what I used last week for my URL classifier) is idenitifying the programs confidence on whether something is spam based on various indentified parameters.
+During the lab, the Regex coach was very useful but also a little bit difficult to learn. Regexes are developed similair to the Yara signatures we used in earlier labs (including this week to compare strings from incoming emails to seperate the ham from the spam. The emphasis was to gain accuracy mostly via improving the regexes. The different between 98% and 99% is very large when utilizing a large data set (i.e, the internet). There were two primary methods mentioned for analyzing emails: probability scoring and additive scoring. Additive scoring is developing a point threshold for whether an email should be classified as spam, and then adjust the points based on various factors disovered about the email. Probability scoring (what I used last week for my URL classifier) is idenitifying the programs confidence on whether something is spam based on various indentified parameters.
  
 #### Research Technique Considerations 
 
-Research technique considerations include identifying how much user input is required, what quality assurances are expected, the value of human input vs automating it, resource cost, fault tolerance, probability scoring/additive scoring, and combination considerations of automation and human input. Below are some basic research techniques discussed in lecture:    
+Research technique considerations include identifying how much user input is required, what quality assurances are expected, the value of human input vs automating it, resource cost, fault tolerance, probability scoring/additive scoring, and combination considerations of automation/human input. Below are some basic research techniques discussed in lecture:    
 
 - Parsing: Extraction of key meta data.
 - Grouping: Group data by timestamp from other common elements.  
@@ -594,7 +594,7 @@ Research technique considerations include identifying how much user input is req
 
 #### Conclusion
 
-This week was not as interesting as past weeks as it was slightly more narrow, and the topic did not necessarily capture my attention. The key takeaways were that many aspects of security can be reduced to finding the largest commonalities between large data sets, classification accuracy is directly tied to the depth of samples provided, spam is more pervasive than one may think, and education is key to preventing social engineering attacks from succeeding. Also more generally, the lecturer wanted to describe the process of sepearting "the spam from the ham", its efficiency, and why the design of filters allows for some spam to find its way to a users inbox. This essentially comes a design decision. The filter is designed to keep annoying and potentially dangerous emails out of sight, but should not cost the customer the interactions they expect from the service (potential money/time/relationship losses).
+This week was not as interesting as past weeks as it was slightly narrower, and the topic did not necessarily capture my attention. The key takeaways were that many aspects of security can be reduced to finding the largest commonalities between large data sets, classification accuracy is directly tied to the depth of samples provided, spam is more pervasive than one may think, and education is key to preventing social engineering attacks from succeeding. Also more generally, the lecturer wanted to describe the process of sepearting "the spam from the ham", its efficiency, and why the design of filters allows for some spam to find its way to a users inbox. This essentially comes a design decision. The filter is designed to keep annoying and potentially dangerous emails out of sight, but should not cost the customer the interactions they expect from the service (potential money/time/relationship losses).
 
 
 
