@@ -567,11 +567,12 @@ Spam engines can be reputation driven, IP driven, message driven, and/or URL dri
  
 #### Research Technique Considerations 
 
-Research technique considerations include identifying how much user input is required, what quality assurances are expected, the value of human input vs automating it, resource cost, fault tolerance, probability scoring/additive scoring, and combination considerations of automation and human input. Below are some basic research techniques discussed in lecture:  
-Parsing: Extraction of key meta data.
-Grouping: Group data by timestamp from other common elements.  
-Aggregation: Values/time, Count distinct, etc (Exposure of relevant research paths).  
-Identifying outliers (example from lecture): When A, which is highly similar to B, is classified as spam but B is not.  
+Research technique considerations include identifying how much user input is required, what quality assurances are expected, the value of human input vs automating it, resource cost, fault tolerance, probability scoring/additive scoring, and combination considerations of automation and human input. Below are some basic research techniques discussed in lecture:    
+
+- Parsing: Extraction of key meta data.
+- Grouping: Group data by timestamp from other common elements.  
+- Aggregation: Values/time, Count distinct, etc (Exposure of relevant research paths).  
+- Identifying outliers (example from lecture): When A, which is highly similar to B, is classified as spam but B is not.  
 
 #### Data Scientific Method (Presented day 2 of Lecture)
 
@@ -583,12 +584,9 @@ question to ask. If not, iterate until you have a testable hypothesis.
 5. Create a framework where you can run tests/experiments.  
 6. Analyze the results to draw insights about the question.
 
-This was described prior to beginning the classification lab
+#### Conclusion
 
-#### Conclusions
-
-This week was not as interesting as past weeks as it was slightly more narrow, and the topic did not necessarily capture my attention. The key takeaways were that many aspects of security can be reduced to finding the largest commonalities between large data sets, classification accuracy is directly tied to the depth of samples provided, spam is more pervasive than one may think, and education is key to preventing social engineering and introductory data manipulation attacks from succeeding.
-
+This week was not as interesting as past weeks as it was slightly more narrow, and the topic did not necessarily capture my attention. The key takeaways were that many aspects of security can be reduced to finding the largest commonalities between large data sets, classification accuracy is directly tied to the depth of samples provided, spam is more pervasive than one may think, and education is key to preventing social engineering/introductory data manipulation attacks from succeeding. Also more generally, the lecturer wanted to describe the process of sepearting "the spam from the ham", its efficiency, and why the design of filters allows for some spam to find its way to a users inbox. This essentially comes a design decision. The filter is designed to keep annoying and potentially dangerous emails out of sight, but should not cost the customer the interactions they expect from the service (potential money/time/relationship losses).
 
 
 
