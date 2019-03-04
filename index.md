@@ -596,7 +596,7 @@ Research technique considerations include identifying how much user input is req
 
 This week was not as interesting as past weeks as it was slightly narrower, and the topic did not necessarily capture my attention. The key takeaways were that many aspects of security can be reduced to finding the largest commonalities between large data sets, classification accuracy is directly tied to the depth of samples provided, spam is more pervasive than one may think, and education is key to preventing social engineering attacks from succeeding. Also more generally, the lecturer wanted to describe the process of sepearting "the spam from the ham", its efficiency, and why the design of filters allows for some spam to find its way to a users inbox. This essentially comes from a design decision. The filter is designed to keep annoying and potentially dangerous emails out of sight, but should not cost the customer the interactions they expect from the service (potential money/time/relationship losses).
 
-
+## Week 9-10 Write Up (TODO)
 
 
 
