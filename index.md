@@ -588,7 +588,7 @@ Research technique considerations include identifying how much user input is req
 1. Start with data.  
 2. Develop intuitions about the data and the questions it can answer.  
 3. Formulate your question.  
-4.Leverage your current data to better understand if it is the right question to ask. If not, iterate until you have a testable hypothesis.  
+4. Leverage your current data to better understand if it is the right question to ask. If not, iterate until you have a testable hypothesis.  
 5. Create a framework where you can run tests/experiments.  
 6. Analyze the results to draw insights about the question.
 
