@@ -565,13 +565,32 @@ Spam engines can be reputation driven, IP driven, message driven, and/or URL dri
 - Trustedsource.org: Historical & current reputations based on McAfee data.
 - Spamhaus.org: Accepted authoritative source of reputation data.
  
-#### Research Technique Considerations (
+#### Research Technique Considerations 
 
 Research technique considerations include identifying how much user input is required, what quality assurances are expected, the value of human input vs automating it, resource cost, fault tolerance, probability scoring/additive scoring, and combination considerations of automation and human input. Below are some basic research techniques discussed in lecture:  
 Parsing: Extraction of key meta data.
 Grouping: Group data by timestamp from other common elements.  
 Aggregation: Values/time, Count distinct, etc (Exposure of relevant research paths).  
 Identifying outliers (example from lecture): When A, which is highly similar to B, is classified as spam but B is not.  
+
+#### Data Scientific Method (Presented day 2 of Lecture)
+
+1. Start with data.  
+2. Develop intuitions about the data and the questions it can answer.  
+3. Formulate your question.  
+4.Leverage your current data to better understand if it is the right
+question to ask. If not, iterate until you have a testable hypothesis.  
+5. Create a framework where you can run tests/experiments.  
+6. Analyze the results to draw insights about the question.
+
+This was described prior to beginning the classification lab
+
+#### Conclusions
+
+This week was not as interesting as past weeks as it was slightly more narrow, and the topic did not necessarily capture my attention. The key takeaways were that many aspects of security can be reduced to finding the largest commonalities between large data sets, classification accuracy is directly tied to the depth of samples provided, spam is more pervasive than one may think, and education is key to preventing social engineering and introductory data manipulation attacks from succeeding.
+
+
+
 
 
 
