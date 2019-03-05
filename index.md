@@ -583,7 +583,7 @@ Research technique considerations include identifying how much user input is req
 - Aggregation: Values/time, Count distinct, etc (Exposure of relevant research paths).  
 - Identifying outliers (example from lecture): When A, which is highly similar to B, is classified as spam but B is not.  
 
-#### Data Scientific Method (Presented day 2 of Lecture)
+#### Data Scientific Method 
 
 1. Start with data.  
 2. Develop intuitions about the data and the questions it can answer.  
@@ -596,7 +596,44 @@ Research technique considerations include identifying how much user input is req
 
 This week was not as interesting as past weeks as it was slightly narrower, and the topic did not necessarily capture my attention. The key takeaways were that many aspects of security can be reduced to finding the largest commonalities between large data sets, classification accuracy is directly tied to the depth of samples provided, spam is more pervasive than one may think, and education is key to preventing social engineering attacks from succeeding. Also more generally, the lecturer wanted to describe the process of sepearting "the spam from the ham", its efficiency, and why the design of filters allows for some spam to find its way to a users inbox. This essentially comes from a design decision. The filter is designed to keep annoying and potentially dangerous emails out of sight, but should not cost the customer the interactions they expect from the service (potential money/time/relationship losses).
 
-## Week 9-10 Write Up (TODO)
+## Week 9-10 Write Up 
+
+This week's write up will focus on the lecture content regarding mobile security created by Fernando Ruiz, a researcher from McAfee. The topics he covered include mobile networks evolution, mobile OS review, android malware revolution, android fundamentals, android malware, native payload analysis, android trojans, android malware heuristics, dynamic/remote code execution, android obfuscation, polymorphic malware, android bootkits, various vulnerabilities, and android ransomeware (a lot of material!). I thought the lecturer was pretty good, and I found this week much more interesting than the previous two weeks. The material also did not repeat itself as much as in previous weeks.
+
+#### Mobile Device History
+
+The first call made from a handheld mobile phone was in the early 1970's created by Motorola. The phone had 30 minutes of talk time, 8 hours stand by, could store up to 30 numbers, and used the analog cell phone network (1G) AMPS (advanced mobile phone system). 1G continued through the 1980's until it was replaced in the early 1990's by 2G which switched to a digital phone network including SMS and cellular authentication/voice encryption. This evolved through the 1990's to 2.5g which offered MMS, email, and WAP protocol advancements. From 2001 - 2010 (3G) evolved to include packet switching and improved security for sim cards, a5/3. 2010 - present day (2019) we are using 4g - VoIP (voice-over IP) ieee 802.16 LTE (long term evoultion) cellular networks.
+
+
+##### Apple IOS
+
+This operating system started the smartphone revolution in 2007 with Apple's iPhone. It was derived from the Mac OS X, and still is today closed source, proprietary, and only present on Apple devices. It is fully integrated with Apple services like iCould, Safari, Siri, iTunes, FaceTime, iMessage, and their app store. The official programming language for this platform is Objective C.
+
+##### Microsofts Windows Phone
+
+The Microsoft windows phone was a successor of Windows Mobile and is also closed source/proprietary (like Apple IOS). It is fully integrated with Microsoft services like Internet Explorer, Office, Bing, Xbox, etc. The windows phone 7 launched in 2010 with embedded CE architecture, Metro UI, and a card-based task switcher. Windows phone 8 launched in 2012 which offered NFC support, Bitlocker encryption, removal storage support improvments, over-air updates, and kernal compatibilities with Windows 8 OS. Windows Phone 8.1 released in 2014 which offered further improvements including Cortana, IE11, and a notification center. The official programming language for this platform is C#.
+
+##### Google Android OS
+
+This operating system was developed by android Inc in 2005 and later was aquired by Google in 2007. It is mostly free and open source (unlike the choices offered above), provides ARM, x86/MIPS CPU support, and over-air updates. The carriers and manufacturerss customize them for other devices (sometimes leading to fragmentation problems). They were first delivered to Nexus devices directly from google. The official programming language for this platform is Java. 
+
+#### System Security Bypasses
+
+##### Jailbreaking IOS
+
+Jailbreaking IOS devices is used to run software which is not authorized by Apple, open security backdoors, or unlock carrier-locker iPhones. There are two types of jailbreaks: tethered and untethered with two types of delivery methods: desktop-based (PwnageTool, redSn0w, greenpois0n, limera1n , evasi0n, etc) and drive-by (jailbreakme series). 
+
+##### Rooting in Android
+
+Rooting Android devices is used to gain root level privileges, execute privileged operations, or bypass restrictions from manufacturers/carriers like tethering. Early day malware exploits included RageAgainsTheCage in android 2.2 and Gingerbreakin android 2.3.
+
+#### Mobile Malware History
+
+
+
+
+
+
 
 
 
