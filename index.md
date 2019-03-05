@@ -637,10 +637,33 @@ In reaction to the first public android security threat, malicious apps were rem
 
 #### Android Architecture
 
-The android architecture consists of 5 major components: the kernel, libraries, android runtime, application framework, and applications (which can be seen below). The kernel utilizes the linux kernel v.3.4 since Ice Cream Sandwich and v.2.6.x for previous releases. The libraries are written in C (core libraries: API classes and methods), and some major components include register-based Dalvik virtual machine, experimental runtime ART, telephony manager (IMEI, IMSI), Location Manager (GPS coordenates), Package Manager (Install/Unistall apps), and much more.
+The android architecture consists of 5 major components: the kernel, libraries, android runtime, application framework, and applications (which can be seen below). The kernel utilizes the linux kernel v.3.4 since Ice Cream Sandwich and v.2.6.x for previous releases. The libraries are written in C (core libraries: API classes and methods), and some major components include register-based Dalvik virtual machine, experimental runtime ART, telephony manager (IMEI, IMSI), Location Manager (GPS coordenates), and Package Manager (Install/Unistall apps).
 
 <img src="android_architecture.PNG" alt="hi51" class="inline"/>
 
+##### Dalvik Virtual Machine / Ahead of Time (AoT) Compilation
+
+The Dalvik virtual machine was designed for devices with contrained processing power, memory and storage which acted as a sandboxed environment for security, performance, and reliablility. It was written in a way that allowed devices to run multiple virtual machines efficiently as a register-based virtual machine. This was eventually replaced with Ahead of Time (AoT) compilation which lead to improved garbage collection, and development/debugging improvements.
+
+##### Android Application Permissions
+
+Android application permissions are a mechanism to enforce restrictions to processes. Default android apps have no permissions (must be declared in the apps manifest) and can be customly created for IPC. There are four protection levels which include:  
+ 
+1. Normal: Default value and low-level risk permission (no user’s approval required).  
+2. Dangerous: High-risk permission (requires confirmation before install).  
+3. Signature: Granted only if two apps’ certificates match (no explicit approval required).  
+4. SignatureOrSystem: Same as signature but granted to apps in the Android system image.  
+
+#### Android Security Enhancements
+<img src="android1" alt="hi51" class="inline"/>
+<img src="android2.PNG" alt="hi51" class="inline"/>
+<img src="android3.PNG" alt="hi51" class="inline"/>
+<img src="android4.PNG" alt="hi51" class="inline"/>
+<img src="android5.PNG" alt="hi51" class="inline"/>
+<img src="android6.PNG" alt="hi51" class="inline"/>
+<img src="android7.PNG" alt="hi51" class="inline"/>
+<img src="android8.PNG" alt="hi51" class="inline"/>
+<img src="android9.PNG" alt="hi51" class="inline"/>
 
 
 
