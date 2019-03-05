@@ -678,7 +678,7 @@ In the early days, android banking trojans were android malware which stole 2FA 
 
 #### Conclusion
 
-This week was interesting, but somewhat hard to follow. The material was extremely vast, and the lecturer was not always concise with his explainations. The key learning objectives were to understand the current state of mobile platforms, their operating systems, the core differences between mobile platforms, the mobile network evolution/security related issues, android security features, android static/dynamic malware analysis, the differences between jailbreaking and rooting, and android platform fundamentals. While I did get to learn a little bit about each of these topics, I would have liked to spend more time on this topic. Overall, the material was enjoyable and I am content with what I learned in this class over the past 10 weeks.
+This week was interesting, but somewhat hard to follow. The material was extremely vast, and the lecturer was not always concise with his explainations. The key learning objectives were to understand the current state of mobile platforms, their operating systems, the core differences between mobile platforms, the mobile network evolution/security related issues, android security features, android static/dynamic malware analysis, the differences between jailbreaking and rooting, and android platform fundamentals. While I did get to learn a little bit about each of these topics, I would have liked to spend more time on this topic. Overall, the material was enjoyable, and I am content with what I learned in this class over the past 10 weeks.
 
 
 
