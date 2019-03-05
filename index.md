@@ -629,6 +629,8 @@ Rooting Android devices is used to gain root level privileges, execute privilege
 
 #### Mobile Malware History
 
+Early mobile attacks from 2000-2004 included the first mobile backdoor, parasitic infector for WinCE, and basic app icon corruption. From 2000-2008 the first commercial mobile spyware was created, financial gains via SMS to premium numbers, and first MM for Windows Mobile. In 2009 the first mobile botnet (symbian worm) was detected which targeted symbian OS 9 and above. It was spreak via URL sent as SMS. It was the first of its kind to execute silent outgoing internet connections. Also during 2009, the first IOS malware was discovered (IKEE). IKEE was ransomeware which prompted users to pay 5 dollars to have the malware removed. The first android malware found "in the wild" was in 2010 - FakePlayer. This malware was an SMS trojan which pretended to be a media player application and sent SMS messages to premium-rate numbers. Mobile malware began to balloon over the following years.
+
 
 
 
