@@ -655,6 +655,7 @@ Android application permissions are a mechanism to enforce restrictions to proce
 4. SignatureOrSystem: Same as signature but granted to apps in the Android system image.  
 
 #### Android Security Enhancements
+Below is a list of security enhancements which have been added to the android platform from Cupcake, Froyo, Gingerbread, Honeycomb, Ice-Cream Sandwich, Jelly Bean, KitKat, and Lolipop releases:
 <img src="android1.PNG" alt="hi51" class="inline"/>
 <img src="android2.PNG" alt="hi51" class="inline"/>
 <img src="android3.PNG" alt="hi51" class="inline"/>
