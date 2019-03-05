@@ -598,7 +598,7 @@ This week was not as interesting as past weeks as it was slightly narrower, and 
 
 ## Week 9-10 Write Up 
 
-This week's write up will focus on the lecture content regarding mobile security created by Fernando Ruiz, a researcher from McAfee. The topics he covered include mobile networks evolution, mobile OS review, android malware revolution, android fundamentals, android malware, native payload analysis, android trojans, android malware heuristics, dynamic/remote code execution, android obfuscation, polymorphic malware, android bootkits, various vulnerabilities, and android ransomeware (a lot of material!). I thought the lecturer was difficult to follow, but much more interesting than the previous two weeks. The material also was almost all new (some of the previous weeks repeated subjects we had learned from other lecturers).
+This week's write up will focus on the lecture content regarding mobile security created by Fernando Ruiz, a researcher from McAfee. The topics he covers include mobile networks evolution, mobile OS review, android malware revolution, android fundamentals, android malware, native payload analysis, android trojans, android malware heuristics, dynamic/remote code execution, android obfuscation, polymorphic malware, android bootkits, various vulnerabilities, and android ransomeware (a lot of material!). I thought the lecturer was difficult to follow, but much more interesting than the previous two weeks. The material also was almost all new (some of the previous weeks repeated subjects we had learned from other lecturers).
 
 #### Mobile Device History
 
@@ -607,7 +607,7 @@ The first call made from a handheld mobile phone was in the early 1970's created
 
 ##### Apple IOS
 
-This operating system started the smartphone revolution in 2007 with Apple's iPhone. It was derived from the Mac OS X, and still is today closed source, proprietary, and only present on Apple devices. It is fully integrated with Apple services like iCould, Safari, Siri, iTunes, FaceTime, iMessage, and their app store. The official programming language for this platform is Objective C.
+This operating system started the smartphone revolution in 2007 with Apple's iPhone. It was derived from the Mac OS X, and is closed source, proprietary, and only present on Apple devices. It is fully integrated with Apple services like iCould, Safari, Siri, iTunes, FaceTime, iMessage, and their app store. The official programming language for this platform is Objective C.
 
 ##### Microsofts Windows Phone
 
@@ -615,13 +615,14 @@ The Microsoft windows phone was a successor of Windows Mobile and is also closed
 
 ##### Google Android OS
 
-This operating system was developed by android Inc in 2005 and later was aquired by Google in 2007. It is mostly free and open source (unlike the choices offered above), provides ARM, x86/MIPS CPU support, and over-air updates. The carriers and manufacturerss customize them for other devices (sometimes leading to fragmentation problems). They were first delivered to Nexus devices directly from google. The official programming language for this platform is Java. 
+This operating system was developed by android Inc in 2005 and later was aquired by Google in 2007. It is mostly free and open source (unlike the choices offered above), provides ARM, x86/MIPS CPU support, and over-air updates. The carriers and manufacturerss customize the software for their devices (sometimes leading to fragmentation problems). It was first delivered to Nexus devices directly from g
+Google. The official programming language for this platform is Java. 
 
 #### System Security Bypasses
 
 ##### Jailbreaking IOS
 
-Jailbreaking IOS devices is used to run software which is not authorized by Apple, open security backdoors, or unlock carrier-locker iPhones. There are two types of jailbreaks: tethered and untethered with two types of delivery methods: desktop-based (PwnageTool, redSn0w, greenpois0n, limera1n , evasi0n, etc) and drive-by (jailbreakme series). 
+Jailbreaking IOS devices is used to run software which is not authorized by Apple, open security backdoors, or to unlock carrier-locked iPhones. There are two types of jailbreaks: tethered and untethered with two types of delivery methods: desktop-based (PwnageTool, redSn0w, greenpois0n, limera1n , evasi0n, etc) and drive-by (jailbreakme series). 
 
 ##### Rooting in Android
 
@@ -629,7 +630,7 @@ Rooting Android devices is used to gain root level privileges, execute privilege
 
 #### Mobile Malware History
 
-Early mobile attacks from 2000-2004 included the first mobile backdoor, parasitic infector for WinCE, and basic app icon corruption. From 2000-2008 the first commercial mobile spyware was created, financial gains via SMS to premium numbers, and first MM for Windows Mobile. In 2009 the first mobile botnet (symbian worm) was detected which targeted symbian OS 9 and above. It was spreak via URL sent as SMS. It was the first of its kind to execute silent outgoing internet connections. Also during 2009, the first IOS malware was discovered (IKEE). IKEE was ransomeware which prompted users to pay 5 dollars to have the malware removed. The first android malware found "in the wild" was in 2010 - FakePlayer. This malware was an SMS trojan which pretended to be a media player application and sent SMS messages to premium-rate numbers. Mobile malware began to balloon over the following years.
+Early mobile attacks from 2000-2004 included the first mobile backdoor, parasitic infector for WinCE, and basic app icon corruption. From 2000-2008 the first commercial mobile spyware was created, financial gains via SMS to premium numbers was accomplished, and first MM for Windows Mobile. In 2009 the first mobile botnet (symbian worm) was detected which targeted symbian OS 9 and above. It was spread via URL sent as SMS. It was the first of its kind to execute silent outgoing internet connections. Also during 2009, the first IOS malware was discovered (IKEE). IKEE was ransomeware which prompted users to pay 5 dollars to have the malware removed. The first android malware found "in the wild" was in 2010 - FakePlayer. This malware was an SMS trojan which pretended to be a media player application and sent SMS messages to premium-rate numbers. Mobile malware began to balloon over the following years.
 
 #### Googles first Reaction to Android Malware
 
@@ -643,7 +644,7 @@ The android architecture consists of 5 major components: the kernel, libraries, 
 
 ##### Dalvik Virtual Machine / Ahead of Time (AoT) Compilation
 
-The Dalvik virtual machine was designed for devices with contrained processing power, memory and storage which acted as a sandboxed environment for security, performance, and reliablility. It was written in a way that allowed devices to run multiple virtual machines efficiently as a register-based virtual machine. This was eventually replaced with Ahead of Time (AoT) compilation which lead to improved garbage collection, and development/debugging improvements.
+The Dalvik virtual machine was designed for devices with contrained processing power, memory and storage which acted as a sandboxed environment to enchance security, performance, and reliablility. It was written in a way that allowed devices to run multiple virtual machines efficiently as a register-based virtual machine. This was eventually replaced with Ahead of Time (AoT) compilation which lead to improved garbage collection, and development/debugging improvements.
 
 ##### Android Application Permissions
 
@@ -669,7 +670,7 @@ Below is a list of security enhancements which have been added to the android pl
 
 #### Mobile Malware Analysis Tools:
 
-From lecture, various tools were mentioned including IDA Pro, ODA, and Hex-rays Decompiler. IDA Pro is the most common suite for reverse engieering which includes support for Dalvik DEX and supports ARM (costs 879-1689). ODA stands for the Online Dissassembler which is free to upload files to for disassembly, supports ARM and elf binaries but is currently in its beta release and not very reliable. The Hex-reys decompiler costs more than the other two (2350) which converts the binary into human readable C-like code.
+From lecture, various tools were mentioned including IDA Pro, ODA, and Hex-rays Decompiler. IDA Pro is the most common suite for reverse engieering which includes support for Dalvik DEX and supports ARM (costs 879-1689). ODA stands for the Online Dissassembler which is free to upload files for disassembly, supports ARM and elf binaries, but is currently in its beta release (not very reliable). The Hex-reys decompiler costs more than the other two (2350) which converts the binary into human readable C-like code.
 
 #### Android Banking Trojans (Bypassing Two-factor Authentication):
 
@@ -677,8 +678,7 @@ In the early days, android banking trojans were android malware which stole 2FA 
 
 #### Conclusion
 
-This week was interesting, but somewhat hard to follow. The material was extremely vast, and the lecturer was not always concise with his explainations. The key learning objectives from the week 9 and 10 material were to understand the current state of mobile platforms, their operating systems, the core differences between mobile platforms, the mobile network evolution/security related issues, android security features, android static/dynamic malware analysis, the differences between jailbreaking and rooting, and android platform fundamentals. While I did get to learn a little bit about each of these topics, I would have liked to spend more time on this topic than last weeks. Overall, I am content with what I have learned from this class.
-
+This week was interesting, but somewhat hard to follow. The material was extremely vast, and the lecturer was not always concise with his explainations. The key learning objectives were to understand the current state of mobile platforms, their operating systems, the core differences between mobile platforms, the mobile network evolution/security related issues, android security features, android static/dynamic malware analysis, the differences between jailbreaking and rooting, and android platform fundamentals. While I did get to learn a little bit about each of these topics, I would have liked to spend more time on this topic. Overall, the material was enjoyable and I am content with what I learned in this class over the past 10 weeks.
 
 
 
