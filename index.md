@@ -631,6 +631,22 @@ Rooting Android devices is used to gain root level privileges, execute privilege
 
 Early mobile attacks from 2000-2004 included the first mobile backdoor, parasitic infector for WinCE, and basic app icon corruption. From 2000-2008 the first commercial mobile spyware was created, financial gains via SMS to premium numbers, and first MM for Windows Mobile. In 2009 the first mobile botnet (symbian worm) was detected which targeted symbian OS 9 and above. It was spreak via URL sent as SMS. It was the first of its kind to execute silent outgoing internet connections. Also during 2009, the first IOS malware was discovered (IKEE). IKEE was ransomeware which prompted users to pay 5 dollars to have the malware removed. The first android malware found "in the wild" was in 2010 - FakePlayer. This malware was an SMS trojan which pretended to be a media player application and sent SMS messages to premium-rate numbers. Mobile malware began to balloon over the following years.
 
+#### Googles first Reaction to Android Malware
+
+In reaction to the first public android security threat, malicious apps were removed from the android market, malicious developer accounts were suspended, remote removal of malicious apps from infected devices (kill switch) was instantiated, automatic install of the "Android Market Security Tool" (AMST) was completed without user intervention. Malware authors took advantage of the fix, and the AMST was repackaged with malicious code. The malicious code sent SMS messages instructed by a command and control server and intercepted incoming SMS messages. The injected code was based on a google code project and signed with a private key posted from a tutorial blog post. 
+
+#### Android Architecture
+
+The android architecture consists of 5 major components: the kernel, libraries, android runtime, application framework, and applications (which can be seen below). The kernel utilizes the linux kernel v.3.4 since Ice Cream Sandwich and v.2.6.x for previous releases. The libraries are written in C (core libraries: API classes and methods), and some major components include register-based Dalvik virtual machine, experimental runtime ART, telephony manager (IMEI, IMSI), Location Manager (GPS coordenates), Package Manager (Install/Unistall apps), and much more.
+
+<img src="android_architecture.PNG" alt="hi51" class="inline"/>
+
+
+
+
+
+
+
 
 
 
