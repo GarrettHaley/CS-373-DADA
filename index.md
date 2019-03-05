@@ -598,7 +598,7 @@ This week was not as interesting as past weeks as it was slightly narrower, and 
 
 ## Week 9-10 Write Up 
 
-This week's write up will focus on the lecture content regarding mobile security created by Fernando Ruiz, a researcher from McAfee. The topics he covered include mobile networks evolution, mobile OS review, android malware revolution, android fundamentals, android malware, native payload analysis, android trojans, android malware heuristics, dynamic/remote code execution, android obfuscation, polymorphic malware, android bootkits, various vulnerabilities, and android ransomeware (a lot of material!). I thought the lecturer was pretty good, and I found this week much more interesting than the previous two weeks. The material also did not repeat itself as much as in previous weeks.
+This week's write up will focus on the lecture content regarding mobile security created by Fernando Ruiz, a researcher from McAfee. The topics he covered include mobile networks evolution, mobile OS review, android malware revolution, android fundamentals, android malware, native payload analysis, android trojans, android malware heuristics, dynamic/remote code execution, android obfuscation, polymorphic malware, android bootkits, various vulnerabilities, and android ransomeware (a lot of material!). I thought the lecturer was difficult to follow, but much more interesting than the previous two weeks. The material also was almost all new (some of the previous weeks repeated subjects we had learned from other lecturers).
 
 #### Mobile Device History
 
@@ -656,6 +656,7 @@ Android application permissions are a mechanism to enforce restrictions to proce
 
 #### Android Security Enhancements
 Below is a list of security enhancements which have been added to the android platform from Cupcake, Froyo, Gingerbread, Honeycomb, Ice-Cream Sandwich, Jelly Bean, KitKat, and Lolipop releases:
+
 <img src="android1.PNG" alt="hi51" class="inline"/>
 <img src="android2.PNG" alt="hi51" class="inline"/>
 <img src="android3.PNG" alt="hi51" class="inline"/>
@@ -666,8 +667,17 @@ Below is a list of security enhancements which have been added to the android pl
 <img src="android8.PNG" alt="hi51" class="inline"/>
 <img src="android9.PNG" alt="hi51" class="inline"/>
 
+#### Mobile Malware Analysis Tools:
 
+From lecture, various tools were mentioned including IDA Pro, ODA, and Hex-rays Decompiler. IDA Pro is the most common suite for reverse engieering which includes support for Dalvik DEX and supports ARM (costs 879-1689). ODA stands for the Online Dissassembler which is free to upload files to for disassembly, supports ARM and elf binaries but is currently in its beta release and not very reliable. The Hex-reys decompiler costs more than the other two (2350) which converts the binary into human readable C-like code.
 
+#### Android Banking Trojans (Bypassing Two-factor Authentication):
+
+In the early days, android banking trojans were android malware which stole 2FA data sent by the bank via SMS to intercept the second authentication factor in the two factor authentication scheme used by many banking systems. By infecting the device the adversary is able to capture the password locally from the device and the 2FA data from SMS. Further development occurred taking the form of fake banking applications which would trick the user to providing both methods of authentication without device infection.
+
+#### Conclusion
+
+This week was interesting, but somewhat hard to follow. The material was extremely vast, and the lecturer was not always concise with his explainations. The key learning objectives from the week 9 and 10 material were to understand the current state of mobile platforms, their operating systems, the core differences between mobile platforms, the mobile network evolution/security related issues, android security features, android static/dynamic malware analysis, the differences between jailbreaking and rooting, and android platform fundamentals. While I did get to learn a little bit about each of these topics, I would have liked to spend more time on this topic than last weeks. Overall, I am content with what I have learned from this class.
 
 
 
